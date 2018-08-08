@@ -19,6 +19,7 @@ public class TC_02_VerifyDiscountCoupon extends AbstractTest {
 
 	@Test
 	public void TC_02_VerifyCoupon() {
+		// test Pull request in Github
 	}
 
 	@AfterClass
