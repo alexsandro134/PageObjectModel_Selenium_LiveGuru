@@ -8,8 +8,6 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -21,9 +19,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class AbstractPage {
-
-	public Log log = LogFactory.getLog(getClass());;
+public class AbstractPage extends Log4J{
 
 	public void openAnyUrl(WebDriver driver, String url) {
 		driver.get(url);
@@ -201,7 +197,7 @@ public class AbstractPage {
 		}
 		return flag;
 	}
-	
+
 	/**
 	 * Verify element display with dynamic locator
 	 * 
@@ -243,7 +239,7 @@ public class AbstractPage {
 		}
 		return flag;
 	}
-	
+
 	public boolean isControlSelected(WebDriver driver, String locator) {
 		WebElement element = driver.findElement(By.xpath(locator));
 		boolean flag = element.isSelected();

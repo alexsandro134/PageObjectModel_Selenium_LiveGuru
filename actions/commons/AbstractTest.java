@@ -7,8 +7,6 @@ import io.github.bonigarcia.wdm.InternetExplorerDriverManager;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -17,14 +15,8 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 
-public class AbstractTest {
+public class AbstractTest extends Log4J {
 	WebDriver driver;
-
-	protected Log log;
-
-	protected AbstractTest() {
-		log = LogFactory.getLog(getClass());
-	}
 
 	protected WebDriver openMultiBrowser(String browser, String browserVersion) {
 		if (browser.equals("chrome")) {
@@ -99,8 +91,10 @@ public class AbstractTest {
 		boolean pass = true;
 		try {
 			Assert.assertEquals(actual, expected);
+			log.info(actual + " is equals " + expected);
 			log.info("----------------- PASSED -----------------");
 		} catch (Throwable e) {
+			log.info(actual + " is not equals " + expected);
 			log.info("----------------- FAILED -----------------");
 			pass = false;
 			Reporter.getCurrentTestResult().setThrowable(e);

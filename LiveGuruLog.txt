@@ -1,0 +1,23 @@
+2018-08-09 15:53:10,229 INFO  com.liveguru.TC_01_CostOfProduct - Before Class: Open Url of Login Page
+2018-08-09 15:53:14,960 INFO  pages.HomePagePO - Wait until element with dynamic xpath: //nav[@id='nav']//a[text() = 'Mobile'] visible
+2018-08-09 15:53:16,741 INFO  pages.HomePagePO - Click to element with dynamic xpath: //nav[@id='nav']//a[text() = 'Mobile']
+2018-08-09 15:53:16,773 INFO  pages.MobilePagePO - Wait until element with dynamic xpath: //h2[a[text()='Sony Xperia']]/following-sibling::div//span[contains(@id,'product-price')] visible
+2018-08-09 15:53:16,833 INFO  pages.MobilePagePO - Wait until element with dynamic xpath: //a[text()='Sony Xperia'] visible
+2018-08-09 15:53:19,257 INFO  pages.MobilePagePO - Click to element with dynamic xpath: //a[text()='Sony Xperia']
+2018-08-09 15:53:19,292 INFO  pages.DetailProductPagePO - Wait until element with xpath: //div[@class='product-name']/span visible
+2018-08-09 15:53:19,348 INFO  pages.DetailProductPagePO - Wait until element with xpath: //span[contains(@id,'product-price')] visible
+2018-08-09 15:53:19,377 INFO  com.liveguru.TC_01_CostOfProduct - SONY XPERIA is equalsSONY XPERIA
+2018-08-09 15:53:19,377 INFO  com.liveguru.TC_01_CostOfProduct - ----------------- PASSED -----------------
+2018-08-09 15:53:19,377 INFO  com.liveguru.TC_01_CostOfProduct - $100.00 is equals$100.00
+2018-08-09 15:53:19,377 INFO  com.liveguru.TC_01_CostOfProduct - ----------------- PASSED -----------------
+2018-08-09 15:53:20,419 INFO  com.liveguru.TC_01_CostOfProduct - ---------- QUIT BROWSER SUCCESS ----------
+2018-08-09 15:53:23,553 INFO  com.liveguru.TC_02_VerifyDiscountCoupon - Before Class: Open Url of Login Page
+2018-08-09 15:53:29,450 INFO  pages.HomePagePO - Wait until element with dynamic xpath: //nav[@id='nav']//a[text() = 'Mobile'] visible
+2018-08-09 15:53:31,514 INFO  pages.HomePagePO - Click to element with dynamic xpath: //nav[@id='nav']//a[text() = 'Mobile']
+2018-08-09 15:53:31,567 INFO  pages.MobilePagePO - Wait until element with dynamic xpath: //h2[a[text()='IPhone']]/following-sibling::div[@class='actions']/button visible
+2018-08-09 15:53:33,085 INFO  pages.MobilePagePO - Click to element with dynamic xpath: //h2[a[text()='IPhone']]/following-sibling::div[@class='actions']/button
+2018-08-09 15:53:33,214 INFO  pages.CheckoutPagePO - Sendkey GURU50 to element with xpath: //input[@id='coupon_code']
+2018-08-09 15:53:34,264 INFO  pages.CheckoutPagePO - Click to element with xpath: //button[@value='Apply']
+2018-08-09 15:53:34,299 INFO  pages.CheckoutPagePO - Element with dynamic xpath: //td[contains(text(),'GURU50')]/following-sibling::td/spanis displayed
+2018-08-09 15:53:34,299 INFO  com.liveguru.TC_02_VerifyDiscountCoupon - ----------------- PASSED -----------------
+2018-08-09 15:53:35,320 INFO  com.liveguru.TC_02_VerifyDiscountCoupon - ---------- QUIT BROWSER SUCCESS ----------
