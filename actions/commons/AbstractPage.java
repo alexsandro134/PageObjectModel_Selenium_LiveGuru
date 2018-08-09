@@ -191,6 +191,17 @@ public class AbstractPage {
 		return flag;
 	}
 
+	public boolean isControlNotDisplayed(WebDriver driver, String locator) {
+		WebElement element = driver.findElement(By.xpath(locator));
+		boolean flag = !element.isDisplayed();
+		if (flag == true) {
+			log.info("Element with xpath: " + locator + "is not displayed");
+		} else {
+			log.info("Element with xpath: " + locator + "is displayed");
+		}
+		return flag;
+	}
+	
 	/**
 	 * Verify element display with dynamic locator
 	 * 
@@ -212,6 +223,27 @@ public class AbstractPage {
 		return flag;
 	}
 
+	/**
+	 * Verify element not display with dynamic locator
+	 * 
+	 * @param driver
+	 * @param locator
+	 * @param value
+	 *            : all of the value after is same type
+	 * @return
+	 */
+	public boolean isControlNotDisplayed(WebDriver driver, String locator, String... value) {
+		locator = String.format(locator, (Object[]) value);
+		WebElement element = driver.findElement(By.xpath(locator));
+		boolean flag = !element.isDisplayed();
+		if (flag == true) {
+			log.info("Element with dynamic xpath: " + locator + "is not displayed");
+		} else {
+			log.info("Element with dynamic xpath: " + locator + "is displayed");
+		}
+		return flag;
+	}
+	
 	public boolean isControlSelected(WebDriver driver, String locator) {
 		WebElement element = driver.findElement(By.xpath(locator));
 		boolean flag = element.isSelected();

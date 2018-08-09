@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="16185" started-at="2018-08-08T07:55:25Z" finished-at="2018-08-08T07:55:41Z">
+  <suite name="Suite" duration-ms="27729" started-at="2018-08-09T04:17:25Z" finished-at="2018-08-09T04:17:53Z">
     <groups>
     </groups>
-    <test name="Run on Chrome" duration-ms="16185" started-at="2018-08-08T07:55:25Z" finished-at="2018-08-08T07:55:41Z">
+    <test name="Run on Chrome" duration-ms="27729" started-at="2018-08-09T04:17:25Z" finished-at="2018-08-09T04:17:53Z">
       <class name="com.liveguru.TC_01_CostOfProduct">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.liveguru.TC_01_CostOfProduct@31dc339b]" name="beforeClass" is-config="true" duration-ms="8767" started-at="2018-08-08T14:55:25Z" finished-at="2018-08-08T14:55:33Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.liveguru.TC_01_CostOfProduct@544fe44c]" name="beforeClass" is-config="true" duration-ms="8312" started-at="2018-08-09T11:17:25Z" finished-at="2018-08-09T11:17:33Z">
           <params>
             <param index="0">
               <value>
@@ -23,15 +23,41 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_01_CostOfProd()[pri:0, instance:com.liveguru.TC_01_CostOfProduct@31dc339b]" name="TC_01_CostOfProd" duration-ms="6372" started-at="2018-08-08T14:55:33Z" finished-at="2018-08-08T14:55:40Z">
+        <test-method status="PASS" signature="TC_01_CostOfProd()[pri:0, instance:com.liveguru.TC_01_CostOfProduct@544fe44c]" name="TC_01_CostOfProd" duration-ms="4626" started-at="2018-08-09T11:17:33Z" finished-at="2018-08-09T11:17:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01_CostOfProd -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.liveguru.TC_01_CostOfProduct@31dc339b]" name="afterClass" is-config="true" duration-ms="1034" started-at="2018-08-08T14:55:40Z" finished-at="2018-08-08T14:55:41Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.liveguru.TC_01_CostOfProduct@544fe44c]" name="afterClass" is-config="true" duration-ms="1035" started-at="2018-08-09T11:17:38Z" finished-at="2018-08-09T11:17:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.liveguru.TC_01_CostOfProduct -->
+      <class name="com.liveguru.TC_02_VerifyDiscountCoupon">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.liveguru.TC_02_VerifyDiscountCoupon@31610302]" name="beforeClass" is-config="true" duration-ms="8175" started-at="2018-08-09T11:17:39Z" finished-at="2018-08-09T11:17:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.41]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="TC_02_VerifyCoupon()[pri:0, instance:com.liveguru.TC_02_VerifyDiscountCoupon@31610302]" name="TC_02_VerifyCoupon" duration-ms="4619" started-at="2018-08-09T11:17:47Z" finished-at="2018-08-09T11:17:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_VerifyCoupon -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.liveguru.TC_02_VerifyDiscountCoupon@31610302]" name="afterClass" is-config="true" duration-ms="948" started-at="2018-08-09T11:17:52Z" finished-at="2018-08-09T11:17:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.liveguru.TC_02_VerifyDiscountCoupon -->
     </test> <!-- Run on Chrome -->
   </suite> <!-- Suite -->
 </testng-results>

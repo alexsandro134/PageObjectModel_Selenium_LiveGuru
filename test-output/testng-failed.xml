@@ -12,10 +12,16 @@
     <parameter name="browser" value="chrome"/>
     <parameter name="version" value="2.41"/>
     <classes>
+      <class name="com.liveguru.TC_02_VerifyDiscountCoupon">
+        <methods>
+          <include name="afterClass"/>
+          <include name="TC_02_VerifyCoupon"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.liveguru.TC_02_VerifyDiscountCoupon -->
       <class name="com.liveguru.TC_01_CostOfProduct">
         <methods>
           <include name="beforeClass"/>
-          <include name="TC_01_CostOfProd"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.liveguru.TC_01_CostOfProduct -->

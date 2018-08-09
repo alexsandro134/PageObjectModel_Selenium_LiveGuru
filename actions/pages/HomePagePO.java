@@ -13,19 +13,9 @@ public class HomePagePO extends AbstractPage{
 		driver = _driver;
 	}
 	
-	public void clickOnDynamicMenuLink(String text) {
+	public MobilePagePO clickOnDynamicMenuLink(String text) {
 		waitForControlVisible(driver, HomePageUI.DYNAMIC_MENU_LINK, text);
 		clickToElement(driver, HomePageUI.DYNAMIC_MENU_LINK, text);
-	}
-	
-	public String getCostOfMobile(String mobileName) {
-		waitForControlVisible(driver, HomePageUI.MOBILE_PRICE, mobileName);
-		return getTextElement(driver, HomePageUI.MOBILE_PRICE, mobileName);
-	}
-	
-	public DetailProductPagePO clickOnDynamicMobileLink(String mobileName) {
-		waitForControlVisible(driver, HomePageUI.DYNAMIC_MOBILE_LINK, mobileName);
-		clickToElement(driver, HomePageUI.DYNAMIC_MOBILE_LINK, mobileName);
-		return PageManagerDriver.getDetailProductPage(driver);
+		return PageManagerDriver.getMobilePage(driver);
 	}
 }
