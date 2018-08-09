@@ -4,4 +4,4 @@ This is demo project for automation using Selenium WebDriver.
 	- Singleton Pattern
 	- Log4j
 	- WebDriverManager
-	- Generate ExtendReport```
+	- Generate ExtendReport
