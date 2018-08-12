@@ -36,7 +36,6 @@
 		<priority value="all" />
 		<appender-ref ref="console" />
 		<appender-ref ref="logfile" />
-		<appender-ref ref="testng" />
 	</category>
 	
 	<root>

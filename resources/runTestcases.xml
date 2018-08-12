@@ -10,8 +10,11 @@
 	<test name="Run on Chrome">
 		<parameter name="browser" value="chrome" />
 		<parameter name="version" value="2.41" />
-		<packages>
+		<!-- <packages>
 			<package name = "com.liveguru"/>
-		</packages>
+		</packages> -->
+		<classes>
+			<class name="com.liveguru.TC_04_CompareProducts"/>
+		</classes>
 	</test>
 </suite>

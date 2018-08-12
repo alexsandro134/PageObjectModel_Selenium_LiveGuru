@@ -6,12 +6,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import pages.CheckoutPagePO;
-import pages.HomePagePO;
-import pages.MobilePagePO;
-import pages.PageManagerDriver;
-
 import commons.AbstractTest;
+import liveguru.pageobjects.CheckoutPagePO;
+import liveguru.pageobjects.HomePagePO;
+import liveguru.pageobjects.MobilePagePO;
+import liveguru.pageobjects.PageManagerDriver;
 
 public class TC_02_VerifyDiscountCoupon extends AbstractTest {
 	WebDriver driver;
@@ -31,7 +30,7 @@ public class TC_02_VerifyDiscountCoupon extends AbstractTest {
 
 	@Test
 	public void TC_02_VerifyCoupon() {
-		mobilePage = homepage.clickOnDynamicMenuLink("Mobile");
+		mobilePage = homepage.clickOnDynamicMenuLink(driver, "Mobile");
 		checkoutPage = mobilePage.addToCart(mobileName);
 		checkoutPage.applyCouponCode(couponCode);
 		verifyTrue(checkoutPage.discountGenerated(couponCode));

@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -19,7 +21,17 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class AbstractPage extends Log4J{
+import liveguru.AbstractPageUI;
+import liveguru.pageobjects.MobilePagePO;
+import liveguru.pageobjects.PageManagerDriver;
+
+public class AbstractPage {
+
+	protected final Log log;
+
+	protected AbstractPage() {
+		log = LogFactory.getLog(getClass());
+	}
 
 	public void openAnyUrl(WebDriver driver, String url) {
 		driver.get(url);
@@ -128,9 +140,10 @@ public class AbstractPage extends Log4J{
 	}
 
 	public String getTextElement(WebDriver driver, String locator) {
+		waitForControlVisible(driver, locator);
 		WebElement element = driver.findElement(By.xpath(locator));
 		String text = element.getText();
-		// log.info("Text of element with xpath: " + locator + " is " + text);
+		log.info("Text of element with xpath: " + locator + " is " + text);
 		return text;
 	}
 
@@ -180,22 +193,21 @@ public class AbstractPage extends Log4J{
 		WebElement element = driver.findElement(By.xpath(locator));
 		boolean flag = element.isDisplayed();
 		if (flag == true) {
-			log.info("Element with xpath: " + locator + "is displayed");
+			log.info("Element with xpath: " + locator + " is displayed");
 		} else {
-			log.info("Element with xpath: " + locator + "is not displayed");
+			log.info("Element with xpath: " + locator + " is not displayed");
 		}
 		return flag;
 	}
 
 	public boolean isControlNotDisplayed(WebDriver driver, String locator) {
-		WebElement element = driver.findElement(By.xpath(locator));
-		boolean flag = !element.isDisplayed();
-		if (flag == true) {
-			log.info("Element with xpath: " + locator + "is not displayed");
+		overrideGlobalTimeout(driver, 10);
+		List<WebElement> elements = driver.findElements(By.xpath(locator));
+		if (elements.size() == 0) {
+			return true;
 		} else {
-			log.info("Element with xpath: " + locator + "is displayed");
+			return false;
 		}
-		return flag;
 	}
 
 	/**
@@ -212,9 +224,9 @@ public class AbstractPage extends Log4J{
 		WebElement element = driver.findElement(By.xpath(locator));
 		boolean flag = element.isDisplayed();
 		if (flag == true) {
-			log.info("Element with dynamic xpath: " + locator + "is displayed");
+			log.info("Element with dynamic xpath: " + locator + " is displayed");
 		} else {
-			log.info("Element with dynamic xpath: " + locator + "is not displayed");
+			log.info("Element with dynamic xpath: " + locator + " is not displayed");
 		}
 		return flag;
 	}
@@ -230,14 +242,13 @@ public class AbstractPage extends Log4J{
 	 */
 	public boolean isControlNotDisplayed(WebDriver driver, String locator, String... value) {
 		locator = String.format(locator, (Object[]) value);
-		WebElement element = driver.findElement(By.xpath(locator));
-		boolean flag = !element.isDisplayed();
-		if (flag == true) {
-			log.info("Element with dynamic xpath: " + locator + "is not displayed");
+		overrideGlobalTimeout(driver, 10);
+		List<WebElement> elements = driver.findElements(By.xpath(locator));
+		if (elements.size() == 0) {
+			return true;
 		} else {
-			log.info("Element with dynamic xpath: " + locator + "is displayed");
+			return false;
 		}
-		return flag;
 	}
 
 	public boolean isControlSelected(WebDriver driver, String locator) {
@@ -509,4 +520,15 @@ public class AbstractPage extends Log4J{
 		wait.until(ExpectedConditions.alertIsPresent());
 		log.info("Wait until alert present");
 	}
+
+	public void overrideGlobalTimeout(WebDriver driver, long timeOut) {
+		driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
+	}
+
+	public MobilePagePO clickOnDynamicMenuLink(WebDriver driver, String text) {
+		waitForControlVisible(driver, AbstractPageUI.DYNAMIC_MENU_LINK, text);
+		clickToElement(driver, AbstractPageUI.DYNAMIC_MENU_LINK, text);
+		return PageManagerDriver.getMobilePage(driver);
+	}
+
 }
