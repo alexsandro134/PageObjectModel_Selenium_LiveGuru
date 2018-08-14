@@ -31,13 +31,45 @@ public class CheckoutPagePO extends AbstractPage {
 	public boolean verifyErrorMessageDisplayed() {
 		return isControlDisplayed(driver, CheckoutPageUI.ERROR_MSG_QUANTITY);
 	}
-	
+
 	public String getErrorMessage() {
 		return getTextElement(driver, CheckoutPageUI.ERROR_MSG_QUANTITY);
 	}
-	
+
 	public EmptyCartPagePO clickToEmptyCart() {
 		clickToElement(driver, CheckoutPageUI.EMPTY_CART_BTN);
-		return PageManagerDriver.getEmptyCartPagePO(driver);
+		return LiveGuruPageManagerDriver.getEmptyCartPagePO(driver);
+	}
+
+	public void selectCountryToShip(String countryText) {
+		waitForControlVisible(driver, CheckoutPageUI.COUNTRY_DROPDOWN);
+		selectItemInDropdown(driver, CheckoutPageUI.COUNTRY_DROPDOWN, countryText);
+	}
+
+	public void selectState(String stateText) {
+		selectItemInDropdown(driver, CheckoutPageUI.REGION_DROPDOWN, stateText);
+	}
+
+	public void inputZipCode(String zipText) {
+		sendkeyToElement(driver, CheckoutPageUI.ZIP_CODE_INPUT, zipText);
+	}
+
+	public boolean verifyShippingCostIsGenerated() {
+		waitForControlVisible(driver, CheckoutPageUI.SHIPPING_FORM);
+		return isControlDisplayed(driver, CheckoutPageUI.SHIPPING_FORM);
+	}
+
+	public void addShippingCost() {
+		clickToElement(driver, CheckoutPageUI.CHECKBOX_SHIPPING_COST);
+		clickToDynamicButton(driver, "Update Total");
+	}
+	
+	public String getTotalPrice() {
+		waitForControlVisible(driver, CheckoutPageUI.SHIPPING_COST_TOTAL);
+		return getTextElement(driver, CheckoutPageUI.TOTAL_COST);
+	}
+	
+	public String getProdPrice() {
+		return getTextElement(driver, CheckoutPageUI.PRODUCT_PRICE);
 	}
 }

@@ -4,9 +4,9 @@ import io.github.bonigarcia.wdm.ChromeDriverManager;
 import io.github.bonigarcia.wdm.FirefoxDriverManager;
 import io.github.bonigarcia.wdm.InternetExplorerDriverManager;
 
-import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -15,10 +15,16 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 
-public class AbstractTest extends Log4J {
+public class AbstractTest {
 	WebDriver driver;
 
-	protected WebDriver openMultiBrowser(String browser, String browserVersion) {
+	protected final Log log;
+
+	protected AbstractTest() {
+		log = LogFactory.getLog(getClass());
+	}
+
+	protected WebDriver openMultiBrowser(String browser, String browserVersion, String url) {
 		if (browser.equals("chrome")) {
 			ChromeDriverManager.getInstance().version(browserVersion).setup();
 			driver = new ChromeDriver();
@@ -40,15 +46,15 @@ public class AbstractTest extends Log4J {
 			System.out.println("Can't init browser!");
 		}
 		log.info("Before Class: Open Url of Login Page");
-		driver.get(Constants.LIVE_GURU_URL);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.get(url);
+		// driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		return driver;
 	}
 
 	public String generateEmail() {
 		StringBuilder randomEmail = new StringBuilder();
-		randomEmail.append(RandomStringUtils.random(8, "abcdefghijklmnopqrstuvxyz")).append("@gmail.com");
+		randomEmail.append(RandomStringUtils.random(10, "abcdefghijklmnopqrstuvxyz1234567890")).append("@gmail.com");
 		return randomEmail.toString();
 	}
 

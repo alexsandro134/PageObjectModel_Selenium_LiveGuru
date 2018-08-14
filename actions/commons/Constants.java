@@ -1,7 +1,6 @@
 package commons;
 
 public class Constants {
-	public static final String LIVE_GURU_URL = "http://live.guru99.com/";
-	public static final String USERNAME = "mngr146770";
-	public static final String PASSWORD = "pypujav";
+	public static final String LIVEGURU_USERNAME = "ttesstt@gmail.com";
+	public static final String LIVEGURU_PASSWORD = "111222";
 }

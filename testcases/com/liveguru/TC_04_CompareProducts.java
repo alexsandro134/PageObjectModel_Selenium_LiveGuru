@@ -10,7 +10,7 @@ import commons.AbstractTest;
 import liveguru.pageobjects.ComparePagePO;
 import liveguru.pageobjects.HomePagePO;
 import liveguru.pageobjects.MobilePagePO;
-import liveguru.pageobjects.PageManagerDriver;
+import liveguru.pageobjects.LiveGuruPageManagerDriver;
 
 public class TC_04_CompareProducts extends AbstractTest {
 	WebDriver driver;
@@ -24,18 +24,19 @@ public class TC_04_CompareProducts extends AbstractTest {
 	String emptyMsg = "Shopping Cart is Empty";
 	String comparePageTitle = "COMPARE PRODUCTS";
 
-	@Parameters({ "browser", "version" })
+	@Parameters({ "browser", "version", "url" })
 	@BeforeClass
-	public void beforeClass(String browser, String browserVersion) {
-		driver = openMultiBrowser(browser, browserVersion);
-		homePage = PageManagerDriver.getHomePage(driver);
+	public void beforeClass(String browser, String browserVersion, String url) {
+		driver = openMultiBrowser(browser, browserVersion, url);
+		homePage = LiveGuruPageManagerDriver.getHomePage(driver);
 	}
 
 	@Test
 	public void TC_01_CompareProd() {
-		mobilePage = homePage.clickOnDynamicMenuLink(driver, "Mobile");
-		mobilePage.addToCompare(mobileSony);
-		mobilePage.addToCompare(mobileIphone);
+		homePage.clickOnDynamicMenuLink(driver, "Mobile");
+		mobilePage = LiveGuruPageManagerDriver.getMobilePage(driver);
+		mobilePage.addAction(driver, mobileSony, "link-compare");
+		mobilePage.addAction(driver, mobileIphone, "link-compare");
 		int totalPhoneCompare = mobilePage.getTotalNumberCompare();
 		comparePage = mobilePage.clickToCompare();
 		verifyEquals(comparePage.getCompareTitle(), comparePageTitle);

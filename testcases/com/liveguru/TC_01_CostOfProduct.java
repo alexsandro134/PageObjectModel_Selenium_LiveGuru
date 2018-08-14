@@ -10,7 +10,7 @@ import commons.AbstractTest;
 import liveguru.pageobjects.DetailProductPagePO;
 import liveguru.pageobjects.HomePagePO;
 import liveguru.pageobjects.MobilePagePO;
-import liveguru.pageobjects.PageManagerDriver;
+import liveguru.pageobjects.LiveGuruPageManagerDriver;
 
 public class TC_01_CostOfProduct extends AbstractTest {
 	WebDriver driver;
@@ -20,16 +20,17 @@ public class TC_01_CostOfProduct extends AbstractTest {
 
 	String mobileName = "Sony Xperia";
 
-	@Parameters({ "browser", "version" })
+	@Parameters({ "browser", "version", "url" })
 	@BeforeClass
-	public void beforeClass(String browser, String browserVersion) {
-		driver = openMultiBrowser(browser, browserVersion);
-		homePage = PageManagerDriver.getHomePage(driver);
+	public void beforeClass(String browser, String browserVersion, String url) {
+		driver = openMultiBrowser(browser, browserVersion, url);
+		homePage = LiveGuruPageManagerDriver.getHomePage(driver);
 	}
 
 	@Test
 	public void TC_01_CostOfProd() {
-		mobilePage = homePage.clickOnDynamicMenuLink(driver, "Mobile");
+		homePage.clickOnDynamicMenuLink(driver, "Mobile");
+		mobilePage = LiveGuruPageManagerDriver.getMobilePage(driver);
 		String priceMobile = mobilePage.getCostOfMobile(mobileName);
 		detailProductPage = mobilePage.clickOnDynamicMobileLink(mobileName);
 		String prodName = detailProductPage.getProductName();
