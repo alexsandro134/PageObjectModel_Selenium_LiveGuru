@@ -24,10 +24,10 @@ public class TC_04_CompareProducts extends AbstractTest {
 	String emptyMsg = "Shopping Cart is Empty";
 	String comparePageTitle = "COMPARE PRODUCTS";
 
-	@Parameters({ "browser", "version" })
+	@Parameters({ "browser", "version", "url" })
 	@BeforeClass
-	public void beforeClass(String browser, String browserVersion) {
-		driver = openMultiBrowser(browser, browserVersion);
+	public void beforeClass(String browser, String browserVersion, String url) {
+		driver = openMultiBrowser(browser, browserVersion, url);
 		homePage = PageManagerDriver.getHomePage(driver);
 	}
 

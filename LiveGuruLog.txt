@@ -1,20 +1,28 @@
-2018-08-12 20:39:33,166 INFO  com.liveguru.TC_04_CompareProducts - Before Class: Open Url of Login Page
-2018-08-12 20:39:37,521 INFO  pages.HomePagePO - Wait until element with dynamic xpath: //nav[@id='nav']//a[text() = 'Mobile'] visible
-2018-08-12 20:39:39,548 INFO  pages.HomePagePO - Click to element with dynamic xpath: //nav[@id='nav']//a[text() = 'Mobile']
-2018-08-12 20:39:40,554 INFO  pages.MobilePagePO - Click to element with dynamic xpath: //h2[a[text()='Sony Xperia']]/following-sibling::div[@class='actions']//a[@class='link-compare']
-2018-08-12 20:39:41,560 INFO  pages.MobilePagePO - Click to element with dynamic xpath: //h2[a[text()='IPhone']]/following-sibling::div[@class='actions']//a[@class='link-compare']
-2018-08-12 20:39:41,614 INFO  pages.MobilePagePO - Size of list elements with xpath: //ol[@id='compare-items']/li is: 2
-2018-08-12 20:39:41,718 INFO  pages.MobilePagePO - Click to element with xpath: //button[@title='Compare']
-2018-08-12 20:39:43,256 INFO  pages.MobilePagePO - Switch to Window with title:Products Comparison List - Magento Commerce
-2018-08-12 20:39:43,288 INFO  pages.ComparePagePO - Wait until element with xpath: //h1 visible
-2018-08-12 20:39:43,314 INFO  pages.ComparePagePO - Text of element with xpath: //h1 is COMPARE PRODUCTS
-2018-08-12 20:39:43,315 INFO  com.liveguru.TC_04_CompareProducts - COMPARE PRODUCTS is equals COMPARE PRODUCTS
-2018-08-12 20:39:43,315 INFO  com.liveguru.TC_04_CompareProducts - ----------------- PASSED -----------------
-2018-08-12 20:39:43,330 INFO  pages.ComparePagePO - Size of list elements with xpath: //h2[@class='product-name'] is: 2
-2018-08-12 20:39:43,330 INFO  com.liveguru.TC_04_CompareProducts - 2 is equals 2
-2018-08-12 20:39:43,330 INFO  com.liveguru.TC_04_CompareProducts - ----------------- PASSED -----------------
-2018-08-12 20:39:43,359 INFO  pages.ComparePagePO - Element with dynamic xpath: //h2[@class='product-name']/a[text()='IPhone']is displayed
-2018-08-12 20:39:43,360 INFO  com.liveguru.TC_04_CompareProducts - ----------------- PASSED -----------------
-2018-08-12 20:39:43,392 INFO  pages.ComparePagePO - Element with dynamic xpath: //h2[@class='product-name']/a[text()='Sony Xperia']is displayed
-2018-08-12 20:39:43,392 INFO  com.liveguru.TC_04_CompareProducts - ----------------- PASSED -----------------
-2018-08-12 20:39:44,454 INFO  com.liveguru.TC_04_CompareProducts - ---------- QUIT BROWSER SUCCESS ----------
+2018-08-20 23:43:46,204 INFO  com.liveguru.TC_01_CostOfProduct - Before Class: Open Url of Login Page
+2018-08-20 23:43:57,185 INFO  com.liveguru.TC_01_CostOfProduct - SONY XPERIA is equals SONY XPERIA
+2018-08-20 23:43:57,185 INFO  com.liveguru.TC_01_CostOfProduct - ----------------- PASSED -----------------
+2018-08-20 23:43:57,185 INFO  com.liveguru.TC_01_CostOfProduct - $100.00 is equals $100.00
+2018-08-20 23:43:57,185 INFO  com.liveguru.TC_01_CostOfProduct - ----------------- PASSED -----------------
+2018-08-20 23:43:57,936 INFO  com.liveguru.TC_01_CostOfProduct - ---------- QUIT BROWSER SUCCESS ----------
+2018-08-20 23:44:00,999 INFO  com.liveguru.TC_02_VerifyDiscountCoupon - Before Class: Open Url of Login Page
+2018-08-20 23:44:10,149 INFO  com.liveguru.TC_02_VerifyDiscountCoupon - ----------------- PASSED -----------------
+2018-08-20 23:44:10,828 INFO  com.liveguru.TC_02_VerifyDiscountCoupon - ---------- QUIT BROWSER SUCCESS ----------
+2018-08-20 23:44:13,821 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - Before Class: Open Url of Login Page
+2018-08-20 23:44:23,393 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ----------------- PASSED -----------------
+2018-08-20 23:44:23,445 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - * The maximum quantity allowed for purchase is 500. is equals * The maximum quantity allowed for purchase is 500.
+2018-08-20 23:44:23,445 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ----------------- PASSED -----------------
+2018-08-20 23:44:23,445 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - Click to Empty Cart
+2018-08-20 23:44:24,395 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - Verify Empty Msg is displayed
+2018-08-20 23:44:24,430 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ----------------- PASSED -----------------
+2018-08-20 23:44:24,430 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - Verify content of Empty Msg
+2018-08-20 23:44:24,480 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - SHOPPING CART IS EMPTY is equals SHOPPING CART IS EMPTY
+2018-08-20 23:44:24,480 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ----------------- PASSED -----------------
+2018-08-20 23:44:25,169 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ---------- QUIT BROWSER SUCCESS ----------
+2018-08-20 23:44:28,209 INFO  com.liveguru.TC_04_CompareProducts - Before Class: Open Url of Login Page
+2018-08-20 23:44:38,663 INFO  com.liveguru.TC_04_CompareProducts - COMPARE PRODUCTS is equals COMPARE PRODUCTS
+2018-08-20 23:44:38,664 INFO  com.liveguru.TC_04_CompareProducts - ----------------- PASSED -----------------
+2018-08-20 23:44:38,680 INFO  com.liveguru.TC_04_CompareProducts - 2 is equals 2
+2018-08-20 23:44:38,680 INFO  com.liveguru.TC_04_CompareProducts - ----------------- PASSED -----------------
+2018-08-20 23:44:38,710 INFO  com.liveguru.TC_04_CompareProducts - ----------------- PASSED -----------------
+2018-08-20 23:44:38,742 INFO  com.liveguru.TC_04_CompareProducts - ----------------- PASSED -----------------
+2018-08-20 23:44:39,413 INFO  com.liveguru.TC_04_CompareProducts - ---------- QUIT BROWSER SUCCESS ----------

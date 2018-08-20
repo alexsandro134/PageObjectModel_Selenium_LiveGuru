@@ -21,10 +21,10 @@ public class TC_02_VerifyDiscountCoupon extends AbstractTest {
 	String mobileName = "IPhone";
 	String couponCode = "GURU50";
 	
-	@Parameters({ "browser", "version" })
+	@Parameters({ "browser", "version", "url" })
 	@BeforeClass
-	public void beforeClass(String browser, String browserVersion) {
-		driver = openMultiBrowser(browser, browserVersion);
+	public void beforeClass(String browser, String browserVersion, String url) {
+		driver = openMultiBrowser(browser, browserVersion, url);
 		homepage = PageManagerDriver.getHomePage(driver);
 	}
 

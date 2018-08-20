@@ -20,10 +20,10 @@ public class TC_01_CostOfProduct extends AbstractTest {
 
 	String mobileName = "Sony Xperia";
 
-	@Parameters({ "browser", "version" })
+	@Parameters({ "browser", "version", "url" })
 	@BeforeClass
-	public void beforeClass(String browser, String browserVersion) {
-		driver = openMultiBrowser(browser, browserVersion);
+	public void beforeClass(String browser, String browserVersion, String url) {
+		driver = openMultiBrowser(browser, browserVersion, url);
 		homePage = PageManagerDriver.getHomePage(driver);
 	}
 
