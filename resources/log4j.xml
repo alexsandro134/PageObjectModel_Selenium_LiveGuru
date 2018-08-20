@@ -11,7 +11,7 @@
 	</appender>
 
 	<appender name="logfile" class="org.apache.log4j.FileAppender">
-		<param name="File" value="BankGuruLog.txt" />
+		<param name="File" value="LiveGuruLog.txt" />
 		<param name="Append" value="false" />
 		<layout class="org.apache.log4j.PatternLayout">
 			<param name="ConversionPattern" value="%d %-5p %c - %m%n" />
@@ -25,24 +25,6 @@
 		</layout>
 	</appender>
 
-	<category name="com.guru99.login">
-		<priority value="all" />
-		<appender-ref ref="console" />
-		<appender-ref ref="logfile" />
-		<appender-ref ref="testng" />
-	</category>
-	<category name="com.guru99.newcustomer">
-		<priority value="all" />
-		<appender-ref ref="console" />
-		<appender-ref ref="logfile" />
-		<appender-ref ref="testng" />
-	</category>
-	<category name="com.guru99.payment">
-		<priority value="all" />
-		<appender-ref ref="console" />
-		<appender-ref ref="logfile" />
-		<appender-ref ref="testng" />
-	</category>
 	<category name="com.liveguru">
 		<priority value="all" />
 		<appender-ref ref="console" />
