@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import liveguru.LiveGuruAbstractPageUI;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.Alert;
@@ -20,10 +22,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import liveguru.AbstractPageUI;
-import liveguru.pageobjects.MobilePagePO;
-import liveguru.pageobjects.PageManagerDriver;
 
 public class AbstractPage {
 
@@ -224,9 +222,9 @@ public class AbstractPage {
 		WebElement element = driver.findElement(By.xpath(locator));
 		boolean flag = element.isDisplayed();
 		if (flag == true) {
-			log.info("Element with dynamic xpath: " + locator + " is displayed");
+			log.info("Element with dynamic xpath: " + locator + "is displayed");
 		} else {
-			log.info("Element with dynamic xpath: " + locator + " is not displayed");
+			log.info("Element with dynamic xpath: " + locator + "is not displayed");
 		}
 		return flag;
 	}
@@ -525,10 +523,33 @@ public class AbstractPage {
 		driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
 	}
 
-	public MobilePagePO clickOnDynamicMenuLink(WebDriver driver, String text) {
-		waitForControlVisible(driver, AbstractPageUI.DYNAMIC_MENU_LINK, text);
-		clickToElement(driver, AbstractPageUI.DYNAMIC_MENU_LINK, text);
-		return PageManagerDriver.getMobilePage(driver);
+	// Live Guru Project
+	public void clickOnDynamicMenuLink(WebDriver driver, String text) {
+		waitForControlVisible(driver, LiveGuruAbstractPageUI.DYNAMIC_MENU_LINK, text);
+		clickToElement(driver, LiveGuruAbstractPageUI.DYNAMIC_MENU_LINK, text);
 	}
 
+	public void clickOnDynamicFooterLink(WebDriver driver, String text) {
+		waitForControlVisible(driver, LiveGuruAbstractPageUI.DYNAMIC_FOOTER_LINK, text);
+		clickToElement(driver, LiveGuruAbstractPageUI.DYNAMIC_FOOTER_LINK, text);
+	}
+
+	public void addAction(WebDriver driver, String deviceName, String actionClass) {
+		clickToElement(driver, LiveGuruAbstractPageUI.ACTION_LINK, deviceName, actionClass);
+	}
+
+	public void clickToDynamicButton(WebDriver driver, String btnText) {
+		waitForControlVisible(driver, LiveGuruAbstractPageUI.DYNAMIC_BUTTON, btnText);
+		clickToElement(driver, LiveGuruAbstractPageUI.DYNAMIC_BUTTON, btnText);
+	}
+
+	public String getSuccessMsg(WebDriver driver) {
+		waitForControlVisible(driver, LiveGuruAbstractPageUI.SUCCESS_MSG);
+		return getTextElement(driver, LiveGuruAbstractPageUI.SUCCESS_MSG);
+	}
+
+	public void inputAccountDynamicInformation(WebDriver driver, String idInput, String text) {
+		waitForControlVisible(driver, LiveGuruAbstractPageUI.DYNAMIC_INPUT_INFORMATION, idInput);
+		sendkeyToElement(driver, text, LiveGuruAbstractPageUI.DYNAMIC_INPUT_INFORMATION, idInput);
+	}
 }

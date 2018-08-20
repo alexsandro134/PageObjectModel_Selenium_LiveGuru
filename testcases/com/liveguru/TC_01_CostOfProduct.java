@@ -9,8 +9,8 @@ import org.testng.annotations.Test;
 import commons.AbstractTest;
 import liveguru.pageobjects.DetailProductPagePO;
 import liveguru.pageobjects.HomePagePO;
+import liveguru.pageobjects.LiveGuruPageManagerDriver;
 import liveguru.pageobjects.MobilePagePO;
-import liveguru.pageobjects.PageManagerDriver;
 
 public class TC_01_CostOfProduct extends AbstractTest {
 	WebDriver driver;
@@ -24,12 +24,13 @@ public class TC_01_CostOfProduct extends AbstractTest {
 	@BeforeClass
 	public void beforeClass(String browser, String browserVersion, String url) {
 		driver = openMultiBrowser(browser, browserVersion, url);
-		homePage = PageManagerDriver.getHomePage(driver);
+		homePage = LiveGuruPageManagerDriver.getHomePage(driver);
 	}
 
 	@Test
 	public void TC_01_CostOfProd() {
-		mobilePage = homePage.clickOnDynamicMenuLink(driver, "Mobile");
+		homePage.clickOnDynamicMenuLink(driver, "Mobile");
+		mobilePage = LiveGuruPageManagerDriver.getMobilePage(driver);
 		String priceMobile = mobilePage.getCostOfMobile(mobileName);
 		detailProductPage = mobilePage.clickOnDynamicMobileLink(mobileName);
 		String prodName = detailProductPage.getProductName();

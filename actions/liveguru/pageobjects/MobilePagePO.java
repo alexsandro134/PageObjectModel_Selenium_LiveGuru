@@ -21,23 +21,19 @@ public class MobilePagePO extends AbstractPage {
 	public DetailProductPagePO clickOnDynamicMobileLink(String mobileName) {
 		waitForControlVisible(driver, MobilePageUI.DYNAMIC_MOBILE_LINK, mobileName);
 		clickToElement(driver, MobilePageUI.DYNAMIC_MOBILE_LINK, mobileName);
-		return PageManagerDriver.getDetailProductPage(driver);
+		return LiveGuruPageManagerDriver.getDetailProductPage(driver);
 	}
 
 	public CheckoutPagePO addToCart(String mobileName) {
 		waitForControlVisible(driver, MobilePageUI.ADD_CART_BUTTON, mobileName);
 		clickToElement(driver, MobilePageUI.ADD_CART_BUTTON, mobileName);
-		return PageManagerDriver.getCheckoutPage(driver);
-	}
-
-	public void addToCompare(String mobileName) {
-		clickToElement(driver, MobilePageUI.COMPARE_LINK, mobileName);
+		return LiveGuruPageManagerDriver.getCheckoutPage(driver);
 	}
 	
 	public ComparePagePO clickToCompare() {
 		clickToElement(driver, MobilePageUI.COMPARE_BTN);
 		switchWindowByTitle(driver, "Products Comparison List - Magento Commerce");
-		return PageManagerDriver.getComparePage(driver);
+		return LiveGuruPageManagerDriver.getComparePage(driver);
 	}
 	
 	public int getTotalNumberCompare() {

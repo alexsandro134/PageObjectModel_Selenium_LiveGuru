@@ -10,8 +10,8 @@ import commons.AbstractTest;
 import liveguru.pageobjects.CheckoutPagePO;
 import liveguru.pageobjects.EmptyCartPagePO;
 import liveguru.pageobjects.HomePagePO;
+import liveguru.pageobjects.LiveGuruPageManagerDriver;
 import liveguru.pageobjects.MobilePagePO;
-import liveguru.pageobjects.PageManagerDriver;
 
 public class TC_03_AddOverQuantiyInStock extends AbstractTest {
 	WebDriver driver;
@@ -28,12 +28,13 @@ public class TC_03_AddOverQuantiyInStock extends AbstractTest {
 	@BeforeClass
 	public void beforeClass(String browser, String browserVersion, String url) {
 		driver = openMultiBrowser(browser, browserVersion, url);
-		homePage = PageManagerDriver.getHomePage(driver);
+		homePage = LiveGuruPageManagerDriver.getHomePage(driver);
 	}
 
 	@Test
-	public void TC_01_CostOfProd() {
-		mobilePage = homePage.clickOnDynamicMenuLink(driver, "Mobile");
+	public void TC_01_AddOverQuantity() {
+		homePage.clickOnDynamicMenuLink(driver, "Mobile");
+		mobilePage = LiveGuruPageManagerDriver.getMobilePage(driver);
 		checkoutPage = mobilePage.addToCart(mobileName);
 		checkoutPage.updateQuantity("1000");
 		verifyTrue(checkoutPage.verifyErrorMessageDisplayed());

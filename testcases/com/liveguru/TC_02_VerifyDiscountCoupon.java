@@ -9,12 +9,12 @@ import org.testng.annotations.Test;
 import commons.AbstractTest;
 import liveguru.pageobjects.CheckoutPagePO;
 import liveguru.pageobjects.HomePagePO;
+import liveguru.pageobjects.LiveGuruPageManagerDriver;
 import liveguru.pageobjects.MobilePagePO;
-import liveguru.pageobjects.PageManagerDriver;
 
 public class TC_02_VerifyDiscountCoupon extends AbstractTest {
 	WebDriver driver;
-	private HomePagePO homepage;
+	private HomePagePO homePage;
 	private MobilePagePO mobilePage;
 	private CheckoutPagePO checkoutPage;
 
@@ -25,12 +25,13 @@ public class TC_02_VerifyDiscountCoupon extends AbstractTest {
 	@BeforeClass
 	public void beforeClass(String browser, String browserVersion, String url) {
 		driver = openMultiBrowser(browser, browserVersion, url);
-		homepage = PageManagerDriver.getHomePage(driver);
+		homePage = LiveGuruPageManagerDriver.getHomePage(driver);
 	}
 
 	@Test
 	public void TC_02_VerifyCoupon() {
-		mobilePage = homepage.clickOnDynamicMenuLink(driver, "Mobile");
+		homePage.clickOnDynamicMenuLink(driver, "Mobile");
+		mobilePage = LiveGuruPageManagerDriver.getMobilePage(driver);
 		checkoutPage = mobilePage.addToCart(mobileName);
 		checkoutPage.applyCouponCode(couponCode);
 		verifyTrue(checkoutPage.discountGenerated(couponCode));

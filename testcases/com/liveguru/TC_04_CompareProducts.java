@@ -9,8 +9,8 @@ import org.testng.annotations.Test;
 import commons.AbstractTest;
 import liveguru.pageobjects.ComparePagePO;
 import liveguru.pageobjects.HomePagePO;
+import liveguru.pageobjects.LiveGuruPageManagerDriver;
 import liveguru.pageobjects.MobilePagePO;
-import liveguru.pageobjects.PageManagerDriver;
 
 public class TC_04_CompareProducts extends AbstractTest {
 	WebDriver driver;
@@ -28,14 +28,15 @@ public class TC_04_CompareProducts extends AbstractTest {
 	@BeforeClass
 	public void beforeClass(String browser, String browserVersion, String url) {
 		driver = openMultiBrowser(browser, browserVersion, url);
-		homePage = PageManagerDriver.getHomePage(driver);
+		homePage = LiveGuruPageManagerDriver.getHomePage(driver);
 	}
 
 	@Test
 	public void TC_01_CompareProd() {
-		mobilePage = homePage.clickOnDynamicMenuLink(driver, "Mobile");
-		mobilePage.addToCompare(mobileSony);
-		mobilePage.addToCompare(mobileIphone);
+		homePage.clickOnDynamicMenuLink(driver, "Mobile");
+		mobilePage = LiveGuruPageManagerDriver.getMobilePage(driver);
+		mobilePage.addAction(driver, mobileSony, "link-compare");
+		mobilePage.addAction(driver, mobileIphone, "link-compare");
 		int totalPhoneCompare = mobilePage.getTotalNumberCompare();
 		comparePage = mobilePage.clickToCompare();
 		verifyEquals(comparePage.getCompareTitle(), comparePageTitle);
