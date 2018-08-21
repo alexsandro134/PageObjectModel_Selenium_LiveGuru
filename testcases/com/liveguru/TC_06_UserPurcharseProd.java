@@ -35,6 +35,7 @@ public class TC_06_UserPurcharseProd extends AbstractTest {
 	String usaCountry = "United States";
 	String stateText = "New York";
 	String zipCode = "543432";
+	String thanksMsg = "THANK YOU FOR YOUR PURCHASE!";
 
 	@Parameters({ "browser", "version", "url" })
 	@BeforeClass
@@ -50,24 +51,29 @@ public class TC_06_UserPurcharseProd extends AbstractTest {
 		myAccountPage.inputInfoToLogin(Constants.LIVEGURU_USERNAME, "email");
 		myAccountPage.inputInfoToLogin(Constants.LIVEGURU_PASSWORD, "pass");
 		myAccountPage.clickToDynamicButton(driver, "Login");
+		
 		myDashboardPage = LiveGuruPageManagerDriver.getMyDashboardPage(driver);
 		verifyTrue(myDashboardPage.isUserLoginSuccessful());
 		myDashboardPage.clickOnDynamicMenuLink(driver, "TV");
+		
 		tvPage = LiveGuruPageManagerDriver.getTVPage(driver);
 		tvPage.addAction(driver, tvName, "link-wishlist");
+		
 		myWishlistPage = LiveGuruPageManagerDriver.getMyWishlistPage(driver);
 		myWishlistPage.clickToDynamicButton(driver, addToCartBtn);
+		
 		checkoutPage = LiveGuruPageManagerDriver.getCheckoutPage(driver);
 		checkoutPage.selectCountryToShip(usaCountry);
 		checkoutPage.selectState(stateText);
 		checkoutPage.inputZipCode(zipCode);
 		checkoutPage.clickToDynamicButton(driver, "Estimate");
 		verifyTrue(checkoutPage.verifyShippingCostIsGenerated());
+		
 		checkoutPage.addShippingCost();
-		String price = checkoutPage.getProdPrice().substring(1);
-		Double totalPrice = Double.parseDouble(price) + 5.00;
-		String expectedPrice = "$" + String.format("%.2f", totalPrice);
+		
+		String expectedPrice = "$" + String.format("%.2f", Double.parseDouble(checkoutPage.getProdPrice().substring(1)) + 5.00);
 		verifyEquals(checkoutPage.getTotalPrice(), expectedPrice);
+		
 		checkoutPage.clickToDynamicButton(driver, "Proceed to Checkout");
 		billingPage = LiveGuruPageManagerDriver.getBillingPage(driver);
 		billingPage.clickToDynamicButton(driver, "Continue");
@@ -75,8 +81,10 @@ public class TC_06_UserPurcharseProd extends AbstractTest {
 		billingPage.selectOrderType("p_method_checkmo");
 		billingPage.clickContinueInShipping("payment-buttons-container");
 		billingPage.clickToDynamicButton(driver, "Place Order");
+		
 		successOrderPage = LiveGuruPageManagerDriver.getSuccessOrderPage(driver);
-		verifyEquals(successOrderPage.getOrderMessage(), "THANK YOU FOR YOUR PURCHASE!");
+		verifyEquals(successOrderPage.getOrderMessage(), thanksMsg);
+		
 		log.info(successOrderPage.getOrderNumber());
 	}
 

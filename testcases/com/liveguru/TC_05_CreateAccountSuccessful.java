@@ -36,6 +36,7 @@ public class TC_05_CreateAccountSuccessful extends AbstractTest {
 	String tvName = "LG LCD";
 	String shareWishlistBtn = "Share Wishlist";
 	String successWishlistMessage = "Your Wishlist has been shared.";
+	String shareMsg = "Sharing message tvPage Liveguru";
 
 	@Parameters({ "browser", "version", "url" })
 	@BeforeClass
@@ -64,7 +65,7 @@ public class TC_05_CreateAccountSuccessful extends AbstractTest {
 		myWishlistPage.clickToDynamicButton(driver, shareWishlistBtn);
 		shareWishlistPage = LiveGuruPageManagerDriver.getShareWishlistPage(driver);
 		shareWishlistPage.inputToTextArea("email_address", generateEmail());
-		shareWishlistPage.inputToTextArea("message", "Sharing message tvPage Liveguru");
+		shareWishlistPage.inputToTextArea("message", shareMsg);
 		shareWishlistPage.clickToDynamicButton(driver, shareWishlistBtn);
 		myWishlistPage = LiveGuruPageManagerDriver.getMyWishlistPage(driver);
 		verifyEquals(myWishlistPage.getSuccessMsg(driver), successWishlistMessage);
