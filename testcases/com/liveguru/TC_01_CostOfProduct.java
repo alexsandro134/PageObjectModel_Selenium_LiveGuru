@@ -24,13 +24,13 @@ public class TC_01_CostOfProduct extends AbstractTest {
 	@BeforeClass
 	public void beforeClass(String browser, String browserVersion, String url) {
 		driver = openMultiBrowser(browser, browserVersion, url);
-		homePage = LiveGuruPageManagerDriver.getHomePage(driver);
+		homePage = (HomePagePO) LiveGuruPageManagerDriver.getInstance(driver, "HomePage");
 	}
 
 	@Test
 	public void TC_01_CostOfProd() {
 		homePage.clickOnDynamicMenuLink(driver, "Mobile");
-		mobilePage = LiveGuruPageManagerDriver.getMobilePage(driver);
+		mobilePage = (MobilePagePO) LiveGuruPageManagerDriver.getInstance(driver, "MobilePage");
 		String priceMobile = mobilePage.getCostOfMobile(mobileName);
 		detailProductPage = mobilePage.clickOnDynamicMobileLink(mobileName);
 		String prodName = detailProductPage.getProductName();

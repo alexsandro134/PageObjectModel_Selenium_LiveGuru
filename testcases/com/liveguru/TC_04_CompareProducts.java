@@ -28,13 +28,13 @@ public class TC_04_CompareProducts extends AbstractTest {
 	@BeforeClass
 	public void beforeClass(String browser, String browserVersion, String url) {
 		driver = openMultiBrowser(browser, browserVersion, url);
-		homePage = LiveGuruPageManagerDriver.getHomePage(driver);
+		homePage = (HomePagePO) LiveGuruPageManagerDriver.getInstance(driver, "HomePage");
 	}
 
 	@Test
 	public void TC_01_CompareProd() {
 		homePage.clickOnDynamicMenuLink(driver, "Mobile");
-		mobilePage = LiveGuruPageManagerDriver.getMobilePage(driver);
+		mobilePage = (MobilePagePO) LiveGuruPageManagerDriver.getInstance(driver, "MobilePage");
 		mobilePage.addAction(driver, mobileSony, "link-compare");
 		mobilePage.addAction(driver, mobileIphone, "link-compare");
 		int totalPhoneCompare = mobilePage.getTotalNumberCompare();

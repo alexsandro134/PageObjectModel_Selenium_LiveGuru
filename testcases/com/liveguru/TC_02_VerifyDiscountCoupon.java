@@ -25,13 +25,13 @@ public class TC_02_VerifyDiscountCoupon extends AbstractTest {
 	@BeforeClass
 	public void beforeClass(String browser, String browserVersion, String url) {
 		driver = openMultiBrowser(browser, browserVersion, url);
-		homePage = LiveGuruPageManagerDriver.getHomePage(driver);
+		homePage = (HomePagePO) LiveGuruPageManagerDriver.getInstance(driver, "HomePage");
 	}
 
 	@Test
 	public void TC_02_VerifyCoupon() {
 		homePage.clickOnDynamicMenuLink(driver, "Mobile");
-		mobilePage = LiveGuruPageManagerDriver.getMobilePage(driver);
+		mobilePage = (MobilePagePO) LiveGuruPageManagerDriver.getInstance(driver, "MobilePage");
 		checkoutPage = mobilePage.addToCart(mobileName);
 		checkoutPage.applyCouponCode(couponCode);
 		verifyTrue(checkoutPage.discountGenerated(couponCode));

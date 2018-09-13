@@ -42,13 +42,13 @@ public class TC_05_CreateAccountSuccessful extends AbstractTest {
 	@BeforeClass
 	public void beforeClass(String browser, String browserVersion, String url) {
 		driver = openMultiBrowser(browser, browserVersion, url);
-		homePage = LiveGuruPageManagerDriver.getHomePage(driver);
+		homePage = (HomePagePO) LiveGuruPageManagerDriver.getInstance(driver, "HomePage");
 	}
 
 	@Test
 	public void TC_01_CreateAccAndShareWishlist() {
 		homePage.clickOnDynamicFooterLink(driver, "My Account");
-		myAccountPage = LiveGuruPageManagerDriver.getMyAccountPage(driver);
+		myAccountPage = (MyAccountPagePO) LiveGuruPageManagerDriver.getInstance(driver, "MyAccountPage");
 		createAccountPage = myAccountPage.clickToCreateNewAccount();
 		createAccountPage.inputAccountDynamicInformation(driver, "firstname", firstName);
 		createAccountPage.inputAccountDynamicInformation(driver, "middlename", middleName);
@@ -59,15 +59,15 @@ public class TC_05_CreateAccountSuccessful extends AbstractTest {
 		myDashboardPage = createAccountPage.clickToRegisterAccount();
 		verifyEquals(myDashboardPage.getSuccessMsg(driver), successCreateMessage);
 		homePage.clickOnDynamicMenuLink(driver, "TV");
-		tvPage = LiveGuruPageManagerDriver.getTVPage(driver);
+		tvPage = (TVPagePO) LiveGuruPageManagerDriver.getInstance(driver, "TVPage");
 		tvPage.addAction(driver, tvName, "link-wishlist");
-		myWishlistPage = LiveGuruPageManagerDriver.getMyWishlistPage(driver);
+		myWishlistPage = (MyWishlistPagePO) LiveGuruPageManagerDriver.getInstance(driver, "MyWishlistPage");
 		myWishlistPage.clickToDynamicButton(driver, shareWishlistBtn);
-		shareWishlistPage = LiveGuruPageManagerDriver.getShareWishlistPage(driver);
+		shareWishlistPage = (ShareWishlistPagePO) LiveGuruPageManagerDriver.getInstance(driver, "ShareWishlistPage");
 		shareWishlistPage.inputToTextArea("email_address", generateEmail());
 		shareWishlistPage.inputToTextArea("message", shareMsg);
 		shareWishlistPage.clickToDynamicButton(driver, shareWishlistBtn);
-		myWishlistPage = LiveGuruPageManagerDriver.getMyWishlistPage(driver);
+		myWishlistPage = (MyWishlistPagePO) LiveGuruPageManagerDriver.getInstance(driver, "MyWishlistPage");
 		verifyEquals(myWishlistPage.getSuccessMsg(driver), successWishlistMessage);
 	}
 

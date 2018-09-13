@@ -38,7 +38,7 @@ public class CheckoutPagePO extends AbstractPage {
 
 	public EmptyCartPagePO clickToEmptyCart() {
 		clickToElement(driver, CheckoutPageUI.EMPTY_CART_BTN);
-		return LiveGuruPageManagerDriver.getEmptyCartPagePO(driver);
+		return (EmptyCartPagePO) LiveGuruPageManagerDriver.getInstance(driver, "EmptyCartPage");
 	}
 
 	public void selectCountryToShip(String countryText) {

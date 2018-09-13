@@ -28,13 +28,13 @@ public class TC_03_AddOverQuantiyInStock extends AbstractTest {
 	@BeforeClass
 	public void beforeClass(String browser, String browserVersion, String url) {
 		driver = openMultiBrowser(browser, browserVersion, url);
-		homePage = LiveGuruPageManagerDriver.getHomePage(driver);
+		homePage = (HomePagePO) LiveGuruPageManagerDriver.getInstance(driver, "HomePage");
 	}
 
 	@Test
 	public void TC_01_AddOverQuantity() {
 		homePage.clickOnDynamicMenuLink(driver, "Mobile");
-		mobilePage = LiveGuruPageManagerDriver.getMobilePage(driver);
+		mobilePage = (MobilePagePO) LiveGuruPageManagerDriver.getInstance(driver, "MobilePage");
 		checkoutPage = mobilePage.addToCart(mobileName);
 		checkoutPage.updateQuantity("1000");
 		verifyTrue(checkoutPage.verifyErrorMessageDisplayed());

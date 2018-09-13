@@ -17,6 +17,6 @@ public class CreateAccountPagePO extends AbstractPage {
 
 	public MyDashboardPagePO clickToRegisterAccount() {
 		clickToElement(driver, CreateAccountPageUI.REGISTER_BTN);
-		return LiveGuruPageManagerDriver.getMyDashboardPage(driver);
+		return (MyDashboardPagePO) LiveGuruPageManagerDriver.getInstance(driver, "MyDashboardPage");
 	}
 }

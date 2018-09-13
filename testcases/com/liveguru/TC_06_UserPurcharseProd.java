@@ -41,28 +41,28 @@ public class TC_06_UserPurcharseProd extends AbstractTest {
 	@BeforeClass
 	public void beforeClass(String browser, String browserVersion, String url) {
 		driver = openMultiBrowser(browser, browserVersion, url);
-		homePage = LiveGuruPageManagerDriver.getHomePage(driver);
+		homePage = (HomePagePO) LiveGuruPageManagerDriver.getInstance(driver, "HomePage");
 	}
 
 	@Test
 	public void TC_01_UserAblePurchaseProd() {
 		homePage.clickOnDynamicFooterLink(driver, "My Account");
-		myAccountPage = LiveGuruPageManagerDriver.getMyAccountPage(driver);
+		myAccountPage = (MyAccountPagePO) LiveGuruPageManagerDriver.getInstance(driver, "MyAccountPage");
 		myAccountPage.inputInfoToLogin(Constants.LIVEGURU_USERNAME, "email");
 		myAccountPage.inputInfoToLogin(Constants.LIVEGURU_PASSWORD, "pass");
 		myAccountPage.clickToDynamicButton(driver, "Login");
 		
-		myDashboardPage = LiveGuruPageManagerDriver.getMyDashboardPage(driver);
+		myDashboardPage = (MyDashboardPagePO) LiveGuruPageManagerDriver.getInstance(driver, "MyDashboardPage");
 		verifyTrue(myDashboardPage.isUserLoginSuccessful());
 		myDashboardPage.clickOnDynamicMenuLink(driver, "TV");
 		
-		tvPage = LiveGuruPageManagerDriver.getTVPage(driver);
+		tvPage = (TVPagePO) LiveGuruPageManagerDriver.getInstance(driver, "TVPage");
 		tvPage.addAction(driver, tvName, "link-wishlist");
 		
-		myWishlistPage = LiveGuruPageManagerDriver.getMyWishlistPage(driver);
+		myWishlistPage = (MyWishlistPagePO) LiveGuruPageManagerDriver.getInstance(driver, "MyWishlistPage");
 		myWishlistPage.clickToDynamicButton(driver, addToCartBtn);
 		
-		checkoutPage = LiveGuruPageManagerDriver.getCheckoutPage(driver);
+		checkoutPage = (CheckoutPagePO) LiveGuruPageManagerDriver.getInstance(driver, "CheckoutPage");
 		checkoutPage.selectCountryToShip(usaCountry);
 		checkoutPage.selectState(stateText);
 		checkoutPage.inputZipCode(zipCode);
@@ -75,14 +75,14 @@ public class TC_06_UserPurcharseProd extends AbstractTest {
 		verifyEquals(checkoutPage.getTotalPrice(), expectedPrice);
 		
 		checkoutPage.clickToDynamicButton(driver, "Proceed to Checkout");
-		billingPage = LiveGuruPageManagerDriver.getBillingPage(driver);
+		billingPage = (BillingPagePO) LiveGuruPageManagerDriver.getInstance(driver, "BillingPage");
 		billingPage.clickToDynamicButton(driver, "Continue");
 		billingPage.clickContinueInShipping("shipping-method-buttons-container");
 		billingPage.selectOrderType("p_method_checkmo");
 		billingPage.clickContinueInShipping("payment-buttons-container");
 		billingPage.clickToDynamicButton(driver, "Place Order");
 		
-		successOrderPage = LiveGuruPageManagerDriver.getSuccessOrderPage(driver);
+		successOrderPage = (SuccessOrderPagePO) LiveGuruPageManagerDriver.getInstance(driver, "SuccessOrderPage");
 		verifyEquals(successOrderPage.getOrderMessage(), thanksMsg);
 		
 		log.info(successOrderPage.getOrderNumber());

@@ -15,7 +15,7 @@ public class MyAccountPagePO extends AbstractPage {
 
 	public CreateAccountPagePO clickToCreateNewAccount() {
 		clickToElement(driver, MyAccountPageUI.CREATE_ACCOUNT_BTN);
-		return LiveGuruPageManagerDriver.getCreateAccountPage(driver);
+		return (CreateAccountPagePO) LiveGuruPageManagerDriver.getInstance(driver, "CreateAccountPage");
 	}
 
 	public void inputInfoToLogin(String liveguruUsername, String idXpath) {
