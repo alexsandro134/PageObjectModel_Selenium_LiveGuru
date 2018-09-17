@@ -6,7 +6,7 @@ import commons.AbstractPage;
 
 public class LiveGuruPageManagerDriver {
 
-	private static HomePagePO homepage;
+	private static HomePagePO homePage;
 	private static DetailProductPagePO detailProductPage;
 	private static MobilePagePO mobilePage;
 	private static CheckoutPagePO checkoutPage;
@@ -24,10 +24,10 @@ public class LiveGuruPageManagerDriver {
 	public static AbstractPage getInstance(WebDriver driver, String page) {
 		switch (page) {
 		case "HomePage":
-			if (homepage == null) {
+			if (homePage == null) {
 				return new HomePagePO(driver);
 			}
-			return homepage;
+			return homePage;
 
 		case "DetailProductPage":
 			if (detailProductPage == null) {
