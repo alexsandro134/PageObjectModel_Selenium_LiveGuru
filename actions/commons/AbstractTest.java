@@ -1,14 +1,31 @@
 package commons;
 
+import static org.monte.media.FormatKeys.EncodingKey;
+import static org.monte.media.FormatKeys.FrameRateKey;
+import static org.monte.media.FormatKeys.KeyFrameIntervalKey;
+import static org.monte.media.FormatKeys.MIME_AVI;
+import static org.monte.media.FormatKeys.MediaTypeKey;
+import static org.monte.media.FormatKeys.MimeTypeKey;
+import static org.monte.media.VideoFormatKeys.CompressorNameKey;
+import static org.monte.media.VideoFormatKeys.DepthKey;
+import static org.monte.media.VideoFormatKeys.ENCODING_AVI_TECHSMITH_SCREEN_CAPTURE;
+import static org.monte.media.VideoFormatKeys.QualityKey;
+
+import java.awt.Dimension;
+import java.awt.GraphicsConfiguration;
+import java.awt.GraphicsEnvironment;
+import java.awt.Rectangle;
+import java.awt.Toolkit;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+import org.monte.media.Format;
+import org.monte.media.FormatKeys.MediaType;
+import org.monte.media.math.Rational;
+import org.monte.screenrecorder.ScreenRecorder;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -25,20 +42,12 @@ import io.github.bonigarcia.wdm.ChromeDriverManager;
 import io.github.bonigarcia.wdm.FirefoxDriverManager;
 import io.github.bonigarcia.wdm.InternetExplorerDriverManager;
 
-import java.awt.*;
-import java.io.File;
-import org.monte.media.Format;
-import org.monte.media.math.Rational;
-import org.monte.screenrecorder.ScreenRecorder;
-import static org.monte.media.AudioFormatKeys.*;
-import static org.monte.media.VideoFormatKeys.*;
-
 public class AbstractTest {
 	WebDriver driver;
 	private final String workingDir = System.getProperty("user.dir");
 
 	protected final Log log;
-	
+
 	private ScreenRecorder screenRecorder;
 
 	protected AbstractTest() {
@@ -109,8 +118,8 @@ public class AbstractTest {
 		randomEmail.append(RandomStringUtils.random(10, "abcdefghijklmnopqrstuvxyz1234567890")).append("@gmail.com");
 		return randomEmail.toString();
 	}
-	
-	public Integer randomNumber () {
+
+	public Integer randomNumber() {
 		int number = 0;
 		return number;
 	}
@@ -157,9 +166,9 @@ public class AbstractTest {
 			log.info(actual + " is equals " + expected);
 			log.info("----------------- PASSED -----------------");
 		} catch (Throwable e) {
-			String filePath = ".\\Screenshot\\img" + randomNumber() + ".png";
+//			String filePath = ".\\Screenshot\\img" + randomNumber() + ".png";
 			log.info(actual + " is not equals " + expected);
-			takeScreenShot(driver, filePath);
+			// takeScreenShot(driver, filePath);
 			log.info("----------------- FAILED -----------------");
 			pass = false;
 			Reporter.getCurrentTestResult().setThrowable(e);
