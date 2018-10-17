@@ -1,8 +1,14 @@
 package commons;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -103,6 +109,11 @@ public class AbstractTest {
 		randomEmail.append(RandomStringUtils.random(10, "abcdefghijklmnopqrstuvxyz1234567890")).append("@gmail.com");
 		return randomEmail.toString();
 	}
+	
+	public Integer randomNumber () {
+		int number = 0;
+		return number;
+	}
 
 	private boolean checkPassed(boolean condition) {
 		boolean pass = true;
@@ -139,14 +150,16 @@ public class AbstractTest {
 		return checkFailed(condition);
 	}
 
-	private boolean checkEquals(Object actual, Object expected) {
+	private boolean checkEquals(Object actual, Object expected) throws IOException {
 		boolean pass = true;
 		try {
 			Assert.assertEquals(actual, expected);
 			log.info(actual + " is equals " + expected);
 			log.info("----------------- PASSED -----------------");
 		} catch (Throwable e) {
+			String filePath = ".\\Screenshot\\img" + randomNumber() + ".png";
 			log.info(actual + " is not equals " + expected);
+			takeScreenShot(driver, filePath);
 			log.info("----------------- FAILED -----------------");
 			pass = false;
 			Reporter.getCurrentTestResult().setThrowable(e);
@@ -154,7 +167,7 @@ public class AbstractTest {
 		return pass;
 	}
 
-	protected boolean verifyEquals(Object actual, Object expected) {
+	protected boolean verifyEquals(Object actual, Object expected) throws IOException {
 		return checkEquals(actual, expected);
 	}
 

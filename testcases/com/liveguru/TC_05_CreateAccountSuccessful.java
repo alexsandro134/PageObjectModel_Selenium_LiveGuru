@@ -1,5 +1,7 @@
 package com.liveguru;
 
+import java.io.IOException;
+
 import liveguru.pageobjects.CreateAccountPagePO;
 import liveguru.pageobjects.HomePagePO;
 import liveguru.pageobjects.LiveGuruPageManagerDriver;
@@ -46,7 +48,7 @@ public class TC_05_CreateAccountSuccessful extends AbstractTest {
 	}
 
 	@Test
-	public void TC_01_CreateAccAndShareWishlist() {
+	public void TC_01_CreateAccAndShareWishlist() throws IOException {
 		homePage.clickOnDynamicFooterLink(driver, "My Account");
 		myAccountPage = (MyAccountPagePO) LiveGuruPageManagerDriver.getInstance(driver, "MyAccountPage");
 		createAccountPage = myAccountPage.clickToCreateNewAccount();

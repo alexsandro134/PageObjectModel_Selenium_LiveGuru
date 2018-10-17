@@ -1,5 +1,7 @@
 package com.liveguru;
 
+import java.io.IOException;
+
 import liveguru.pageobjects.BillingPagePO;
 import liveguru.pageobjects.CheckoutPagePO;
 import liveguru.pageobjects.HomePagePO;
@@ -45,7 +47,7 @@ public class TC_06_UserPurcharseProd extends AbstractTest {
 	}
 
 	@Test
-	public void TC_01_UserAblePurchaseProd() {
+	public void TC_01_UserAblePurchaseProd() throws IOException {
 		homePage.clickOnDynamicFooterLink(driver, "My Account");
 		myAccountPage = (MyAccountPagePO) LiveGuruPageManagerDriver.getInstance(driver, "MyAccountPage");
 		myAccountPage.inputInfoToLogin(Constants.LIVEGURU_USERNAME, "email");

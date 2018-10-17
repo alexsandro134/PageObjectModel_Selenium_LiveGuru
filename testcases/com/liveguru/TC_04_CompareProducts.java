@@ -1,5 +1,7 @@
 package com.liveguru;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -32,7 +34,7 @@ public class TC_04_CompareProducts extends AbstractTest {
 	}
 
 	@Test
-	public void TC_01_CompareProd() {
+	public void TC_01_CompareProd() throws IOException {
 		homePage.clickOnDynamicMenuLink(driver, "Mobile");
 		mobilePage = (MobilePagePO) LiveGuruPageManagerDriver.getInstance(driver, "MobilePage");
 		mobilePage.addAction(driver, mobileSony, "link-compare");

@@ -1,5 +1,7 @@
 package com.liveguru;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -28,7 +30,7 @@ public class TC_01_CostOfProduct extends AbstractTest {
 	}
 
 	@Test
-	public void TC_01_CostOfProd() {
+	public void TC_01_CostOfProd() throws IOException {
 		homePage.clickOnDynamicMenuLink(driver, "Mobile");
 		mobilePage = (MobilePagePO) LiveGuruPageManagerDriver.getInstance(driver, "MobilePage");
 		String priceMobile = mobilePage.getCostOfMobile(mobileName);
