@@ -19,18 +19,28 @@ import io.github.bonigarcia.wdm.ChromeDriverManager;
 import io.github.bonigarcia.wdm.FirefoxDriverManager;
 import io.github.bonigarcia.wdm.InternetExplorerDriverManager;
 
+import java.awt.*;
+import java.io.File;
+import org.monte.media.Format;
+import org.monte.media.math.Rational;
+import org.monte.screenrecorder.ScreenRecorder;
+import static org.monte.media.AudioFormatKeys.*;
+import static org.monte.media.VideoFormatKeys.*;
+
 public class AbstractTest {
 	WebDriver driver;
 	private final String workingDir = System.getProperty("user.dir");
 
 	protected final Log log;
+	
+	private ScreenRecorder screenRecorder;
 
 	protected AbstractTest() {
 		log = LogFactory.getLog(getClass());
 	}
 
 	@SuppressWarnings("deprecation")
-	protected WebDriver openMultiBrowser(String browser, String browserVersion, String url) {
+	protected WebDriver openMultiBrowser(String browser, String browserVersion, String url) throws Exception {
 		if (browser.equals("chrome")) {
 			ChromeDriverManager.getInstance().version(browserVersion).setup();
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
@@ -81,6 +91,7 @@ public class AbstractTest {
 			System.out.println("Can't init browser!");
 		}
 		log.info("Before Class: Open Url of Login Page");
+		startRecording();
 		driver.get(url);
 		// driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
@@ -152,6 +163,7 @@ public class AbstractTest {
 			String osName = System.getProperty("os.name").toLowerCase();
 			String cmd = "";
 			driver.quit();
+			stopRecording();
 			if (driver.toString().toLowerCase().contains("chrome")) {
 				if (osName.toLowerCase().contains("mac")) {
 					cmd = "pkill chromedriver";
@@ -170,5 +182,26 @@ public class AbstractTest {
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
+	}
+
+	public void startRecording() throws Exception {
+		File file = new File("E:\\VideosRecorder");
+
+		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		int width = screenSize.width;
+		int height = screenSize.height;
+
+		Rectangle captureSize = new Rectangle(0, 0, width, height);
+
+		GraphicsConfiguration gc = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().getDefaultConfiguration();
+
+		this.screenRecorder = new SpecializedScreenRecorder(gc, captureSize, new Format(MediaTypeKey, MediaType.FILE, MimeTypeKey, MIME_AVI), new Format(MediaTypeKey, MediaType.VIDEO, EncodingKey, ENCODING_AVI_TECHSMITH_SCREEN_CAPTURE, CompressorNameKey, ENCODING_AVI_TECHSMITH_SCREEN_CAPTURE, DepthKey, 24, FrameRateKey, Rational.valueOf(15), QualityKey, 1.0f, KeyFrameIntervalKey, 15 * 60), new Format(MediaTypeKey, MediaType.VIDEO, EncodingKey, "black", FrameRateKey, Rational.valueOf(30)), null,
+				file, "MyVideo");
+		screenRecorder.start();
+
+	}
+
+	public void stopRecording() throws Exception {
+		this.screenRecorder.stop();
 	}
 }

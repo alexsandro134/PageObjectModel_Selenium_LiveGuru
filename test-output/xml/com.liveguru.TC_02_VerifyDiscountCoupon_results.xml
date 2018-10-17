@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Run on CHROME HEADLESS"
+<testsuite name="Run on CHROME"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="7.513">
+           time="5.350">
   <properties />
   
   
-            <testcase name="TC_02_VerifyCoupon" time="7.513" classname="com.liveguru.TC_02_VerifyDiscountCoupon" />
+            <testcase name="TC_02_VerifyCoupon" time="5.350" classname="com.liveguru.TC_02_VerifyDiscountCoupon" />
       
 </testsuite>

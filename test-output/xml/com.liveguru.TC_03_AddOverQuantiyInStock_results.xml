@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Run on CHROME HEADLESS"
+<testsuite name="Run on CHROME"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="6.670">
+           time="9.656">
   <properties />
   
   
-            <testcase name="TC_01_AddOverQuantity" time="6.670" classname="com.liveguru.TC_03_AddOverQuantiyInStock" />
+            <testcase name="TC_01_AddOverQuantity" time="9.656" classname="com.liveguru.TC_03_AddOverQuantiyInStock" />
       
 </testsuite>

@@ -1,43 +1,36 @@
-2018-09-13 11:07:04,120 INFO  com.liveguru.TC_01_CostOfProduct - Before Class: Open Url of Login Page
-2018-09-13 11:07:13,473 INFO  com.liveguru.TC_01_CostOfProduct - SONY XPERIA is equals SONY XPERIA
-2018-09-13 11:07:13,473 INFO  com.liveguru.TC_01_CostOfProduct - ----------------- PASSED -----------------
-2018-09-13 11:07:13,473 INFO  com.liveguru.TC_01_CostOfProduct - $100.00 is equals $100.00
-2018-09-13 11:07:13,473 INFO  com.liveguru.TC_01_CostOfProduct - ----------------- PASSED -----------------
-2018-09-13 11:07:14,342 INFO  com.liveguru.TC_01_CostOfProduct - ---------- QUIT BROWSER SUCCESS ----------
-2018-09-13 11:07:17,358 INFO  com.liveguru.TC_02_VerifyDiscountCoupon - Before Class: Open Url of Login Page
-2018-09-13 11:07:26,929 INFO  com.liveguru.TC_02_VerifyDiscountCoupon - ----------------- PASSED -----------------
-2018-09-13 11:07:27,660 INFO  com.liveguru.TC_02_VerifyDiscountCoupon - ---------- QUIT BROWSER SUCCESS ----------
-2018-09-13 11:07:30,760 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - Before Class: Open Url of Login Page
-2018-09-13 11:07:39,596 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ----------------- PASSED -----------------
-2018-09-13 11:07:39,643 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - * The maximum quantity allowed for purchase is 500. is equals * The maximum quantity allowed for purchase is 500.
-2018-09-13 11:07:39,644 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ----------------- PASSED -----------------
-2018-09-13 11:07:39,644 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - Click to Empty Cart
-2018-09-13 11:07:40,456 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - Verify Empty Msg is displayed
-2018-09-13 11:07:40,494 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ----------------- PASSED -----------------
-2018-09-13 11:07:40,494 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - Verify content of Empty Msg
-2018-09-13 11:07:40,541 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - SHOPPING CART IS EMPTY is equals SHOPPING CART IS EMPTY
-2018-09-13 11:07:40,541 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ----------------- PASSED -----------------
-2018-09-13 11:07:41,282 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ---------- QUIT BROWSER SUCCESS ----------
-2018-09-13 11:07:44,298 INFO  com.liveguru.TC_04_CompareProducts - Before Class: Open Url of Login Page
-2018-09-13 11:07:54,354 INFO  com.liveguru.TC_04_CompareProducts - COMPARE PRODUCTS is equals COMPARE PRODUCTS
-2018-09-13 11:07:54,355 INFO  com.liveguru.TC_04_CompareProducts - ----------------- PASSED -----------------
-2018-09-13 11:07:54,383 INFO  com.liveguru.TC_04_CompareProducts - 2 is equals 2
-2018-09-13 11:07:54,383 INFO  com.liveguru.TC_04_CompareProducts - ----------------- PASSED -----------------
-2018-09-13 11:07:54,421 INFO  com.liveguru.TC_04_CompareProducts - ----------------- PASSED -----------------
-2018-09-13 11:07:54,451 INFO  com.liveguru.TC_04_CompareProducts - ----------------- PASSED -----------------
-2018-09-13 11:07:55,197 INFO  com.liveguru.TC_04_CompareProducts - ---------- QUIT BROWSER SUCCESS ----------
-2018-09-13 11:07:58,205 INFO  com.liveguru.TC_05_CreateAccountSuccessful - Before Class: Open Url of Login Page
-2018-09-13 11:08:06,333 INFO  com.liveguru.TC_05_CreateAccountSuccessful - Thank you for registering with Main Website Store. is equals Thank you for registering with Main Website Store.
-2018-09-13 11:08:06,333 INFO  com.liveguru.TC_05_CreateAccountSuccessful - ----------------- PASSED -----------------
-2018-09-13 11:08:11,361 INFO  com.liveguru.TC_05_CreateAccountSuccessful - Your Wishlist has been shared. is equals Your Wishlist has been shared.
-2018-09-13 11:08:11,361 INFO  com.liveguru.TC_05_CreateAccountSuccessful - ----------------- PASSED -----------------
-2018-09-13 11:08:12,144 INFO  com.liveguru.TC_05_CreateAccountSuccessful - ---------- QUIT BROWSER SUCCESS ----------
-2018-09-13 11:08:15,242 INFO  com.liveguru.TC_06_UserPurcharseProd - Before Class: Open Url of Login Page
-2018-09-13 11:08:22,406 INFO  com.liveguru.TC_06_UserPurcharseProd - ----------------- PASSED -----------------
-2018-09-13 11:08:28,239 INFO  com.liveguru.TC_06_UserPurcharseProd - ----------------- PASSED -----------------
-2018-09-13 11:08:29,884 INFO  com.liveguru.TC_06_UserPurcharseProd - $620.00 is equals $620.00
-2018-09-13 11:08:29,884 INFO  com.liveguru.TC_06_UserPurcharseProd - ----------------- PASSED -----------------
-2018-09-13 11:08:35,532 INFO  com.liveguru.TC_06_UserPurcharseProd - THANK YOU FOR YOUR PURCHASE! is equals THANK YOU FOR YOUR PURCHASE!
-2018-09-13 11:08:35,532 INFO  com.liveguru.TC_06_UserPurcharseProd - ----------------- PASSED -----------------
-2018-09-13 11:08:35,591 INFO  com.liveguru.TC_06_UserPurcharseProd - 100007915
-2018-09-13 11:08:36,309 INFO  com.liveguru.TC_06_UserPurcharseProd - ---------- QUIT BROWSER SUCCESS ----------
+2018-10-17 22:59:42,061 INFO  com.liveguru.TC_01_CostOfProduct - Before Class: Open Url of Login Page
+2018-10-17 22:59:50,624 INFO  com.liveguru.TC_01_CostOfProduct - SONY XPERIA is equals SONY XPERIA
+2018-10-17 22:59:50,624 INFO  com.liveguru.TC_01_CostOfProduct - ----------------- PASSED -----------------
+2018-10-17 22:59:50,624 INFO  com.liveguru.TC_01_CostOfProduct - $100.00 is equals $100.00
+2018-10-17 22:59:50,624 INFO  com.liveguru.TC_01_CostOfProduct - ----------------- PASSED -----------------
+2018-10-17 22:59:51,700 INFO  com.liveguru.TC_01_CostOfProduct - ---------- QUIT BROWSER SUCCESS ----------
+2018-10-17 22:59:54,744 INFO  com.liveguru.TC_02_VerifyDiscountCoupon - Before Class: Open Url of Login Page
+2018-10-17 23:00:04,918 INFO  com.liveguru.TC_02_VerifyDiscountCoupon - ----------------- PASSED -----------------
+2018-10-17 23:00:06,003 INFO  com.liveguru.TC_02_VerifyDiscountCoupon - ---------- QUIT BROWSER SUCCESS ----------
+2018-10-17 23:00:08,891 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - Before Class: Open Url of Login Page
+2018-10-17 23:00:20,938 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ----------------- PASSED -----------------
+2018-10-17 23:00:20,991 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - * The maximum quantity allowed for purchase is 500. is equals * The maximum quantity allowed for purchase is 500.
+2018-10-17 23:00:20,991 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ----------------- PASSED -----------------
+2018-10-17 23:00:20,991 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - Click to Empty Cart
+2018-10-17 23:00:22,580 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - Verify Empty Msg is displayed
+2018-10-17 23:00:22,633 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ----------------- PASSED -----------------
+2018-10-17 23:00:22,633 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - Verify content of Empty Msg
+2018-10-17 23:00:22,709 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - SHOPPING CART IS EMPTY is equals SHOPPING CART IS EMPTY
+2018-10-17 23:00:22,709 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ----------------- PASSED -----------------
+2018-10-17 23:00:23,717 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ---------- QUIT BROWSER SUCCESS ----------
+2018-10-17 23:00:26,626 INFO  com.liveguru.TC_04_CompareProducts - Before Class: Open Url of Login Page
+2018-10-17 23:00:33,412 INFO  com.liveguru.TC_05_CreateAccountSuccessful - Before Class: Open Url of Login Page
+2018-10-17 23:00:46,191 INFO  com.liveguru.TC_05_CreateAccountSuccessful - Thank you for registering with Main Website Store. is equals Thank you for registering with Main Website Store.
+2018-10-17 23:00:46,191 INFO  com.liveguru.TC_05_CreateAccountSuccessful - ----------------- PASSED -----------------
+2018-10-17 23:01:05,692 INFO  com.liveguru.TC_05_CreateAccountSuccessful - Your Wishlist has been shared. is equals Your Wishlist has been shared.
+2018-10-17 23:01:05,693 INFO  com.liveguru.TC_05_CreateAccountSuccessful - ----------------- PASSED -----------------
+2018-10-17 23:01:06,824 INFO  com.liveguru.TC_05_CreateAccountSuccessful - ---------- QUIT BROWSER SUCCESS ----------
+2018-10-17 23:01:09,887 INFO  com.liveguru.TC_06_UserPurcharseProd - Before Class: Open Url of Login Page
+2018-10-17 23:01:17,822 INFO  com.liveguru.TC_06_UserPurcharseProd - ----------------- PASSED -----------------
+2018-10-17 23:01:26,248 INFO  com.liveguru.TC_06_UserPurcharseProd - ----------------- PASSED -----------------
+2018-10-17 23:01:28,213 INFO  com.liveguru.TC_06_UserPurcharseProd - $620.00 is equals $620.00
+2018-10-17 23:01:28,213 INFO  com.liveguru.TC_06_UserPurcharseProd - ----------------- PASSED -----------------
+2018-10-17 23:01:34,308 INFO  com.liveguru.TC_06_UserPurcharseProd - THANK YOU FOR YOUR PURCHASE! is equals THANK YOU FOR YOUR PURCHASE!
+2018-10-17 23:01:34,309 INFO  com.liveguru.TC_06_UserPurcharseProd - ----------------- PASSED -----------------
+2018-10-17 23:01:34,417 INFO  com.liveguru.TC_06_UserPurcharseProd - 100008100
+2018-10-17 23:01:35,502 INFO  com.liveguru.TC_06_UserPurcharseProd - ---------- QUIT BROWSER SUCCESS ----------

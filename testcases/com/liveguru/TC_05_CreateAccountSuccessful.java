@@ -40,7 +40,7 @@ public class TC_05_CreateAccountSuccessful extends AbstractTest {
 
 	@Parameters({ "browser", "version", "url" })
 	@BeforeClass
-	public void beforeClass(String browser, String browserVersion, String url) {
+	public void beforeClass(String browser, String browserVersion, String url) throws Exception {
 		driver = openMultiBrowser(browser, browserVersion, url);
 		homePage = (HomePagePO) LiveGuruPageManagerDriver.getInstance(driver, "HomePage");
 	}

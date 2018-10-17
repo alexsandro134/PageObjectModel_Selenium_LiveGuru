@@ -8,14 +8,14 @@
 		<listener class-name="commons.ExtentReportNG" />
 	</listeners>
 
-<!-- 	<test name="Run on IE11">
+<!--  	<test name="Run on IE11">
 		<parameter name="browser" value="ie" />
 		<parameter name="version" value="3.14" />
 		<parameter name="url" value="http://live.guru99.com/" />
 		<packages>
 			<package name="com.liveguru" />
 		</packages>
-	</test>
+	</test> -->
 
 	<test name="Run on CHROME">
 		<parameter name="browser" value="chrome" />
@@ -24,16 +24,16 @@
 		<packages>
 			<package name="com.liveguru" />
 		</packages>
-	</test> -->
+	</test>
 
-	<test name="Run on CHROME HEADLESS">
+<!-- 	<test name="Run on CHROME HEADLESS">
 		<parameter name="browser" value="chrome_headless" />
 		<parameter name="version" value="2.41" />
 		<parameter name="url" value="http://live.guru99.com/" />
 		<packages>
 			<package name="com.liveguru" />
 		</packages>
-	</test>
+	</test> -->
 
 <!-- 	<test name="Run on FIREFOX">
 		<parameter name="browser" value="firefox" />
