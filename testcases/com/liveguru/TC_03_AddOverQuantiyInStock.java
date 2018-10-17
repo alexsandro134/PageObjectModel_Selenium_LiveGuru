@@ -1,5 +1,7 @@
 package com.liveguru;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -32,7 +34,7 @@ public class TC_03_AddOverQuantiyInStock extends AbstractTest {
 	}
 
 	@Test
-	public void TC_01_AddOverQuantity() {
+	public void TC_01_AddOverQuantity() throws IOException {
 		homePage.clickOnDynamicMenuLink(driver, "Mobile");
 		mobilePage = (MobilePagePO) LiveGuruPageManagerDriver.getInstance(driver, "MobilePage");
 		checkoutPage = mobilePage.addToCart(mobileName);
