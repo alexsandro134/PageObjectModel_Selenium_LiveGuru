@@ -16,48 +16,46 @@ public class ExcelUtils {
 
 	public static Object[][] readExcel(String path) throws IOException, InvalidFormatException {
 
+		int totalRowNum, totalCellNum;
+		Object[][] tabArray = null;
+
 		// Creating a Workbook from an Excel file (.xls or .xlsx)
 		Workbook workbook = WorkbookFactory.create(new File(path));
 
 		// Retrieving the number of sheets in the Workbook
 		System.out.println("Workbook has " + workbook.getNumberOfSheets() + " Sheets : ");
 
-		/*
-		 * =============================================================
-		 * Iterating over all the sheets in the workbook (Multiple ways)
-		 * =============================================================
-		 */
-
 		// 1. You can obtain a sheetIterator and iterate over it
 		Iterator<Sheet> sheetIterator = workbook.sheetIterator();
 		System.out.println("Retrieving Sheets using Iterator");
+
 		while (sheetIterator.hasNext()) {
 			Sheet sheet = sheetIterator.next();
 			System.out.println("=> " + sheet.getSheetName());
 		}
-		/*
-		 * ==================================================================
-		 * Iterating over all the rows and columns in a Sheet (Multiple ways)
-		 * ==================================================================
-		 */
 
 		// Getting the Sheet at index zero
 		Sheet sheet = workbook.getSheetAt(0);
 
+		// Getting the row number of sheet
+		totalRowNum = sheet.getPhysicalNumberOfRows();
+
 		// Create a DataFormatter to format and get each cell's value as String
 		DataFormatter dataFormatter = new DataFormatter();
 
-		// 1. You can obtain a rowIterator and columnIterator and iterate over
-		// them
-
-		Object[][] tabArray = new String[4][3];
-		
 		System.out.println("\n\nIterating over Rows and Columns using Iterator\n");
 		Iterator<Row> rowIterator = sheet.rowIterator();
 		while (rowIterator.hasNext()) {
 			Row row = rowIterator.next();
-			
-			// just skip the rows if row number is 0 or 1
+			// Getting the cell number of sheet
+			totalCellNum = row.getLastCellNum();
+
+			if (tabArray == null) {
+				// Not count first row and first column
+				tabArray = new String[totalRowNum - 1][totalCellNum - 1];
+			}
+
+			// just skip the rows if row number is 0
 			if (row.getRowNum() == 0) {
 				continue;
 			} else {
@@ -66,7 +64,13 @@ public class ExcelUtils {
 				while (cellIterator.hasNext()) {
 					Cell cell = cellIterator.next();
 					String cellValue = dataFormatter.formatCellValue(cell);
-					tabArray[row.getRowNum() - 1][cell.getColumnIndex()] = cellValue;
+
+					if (cell.getColumnIndex() == 0) {
+						continue;
+					} else {
+						tabArray[row.getRowNum() - 1][cell.getColumnIndex() - 1] = cellValue;
+					}
+
 				}
 			}
 		}

@@ -2,16 +2,6 @@ package com.liveguru;
 
 import java.io.IOException;
 
-import liveguru.pageobjects.CreateAccountPagePO;
-import liveguru.pageobjects.HomePagePO;
-import liveguru.pageobjects.LiveGuruPageManagerDriver;
-import liveguru.pageobjects.MyAccountPagePO;
-import liveguru.pageobjects.MyDashboardPagePO;
-import liveguru.pageobjects.MyWishlistPagePO;
-import liveguru.pageobjects.ShareWishlistPagePO;
-import liveguru.pageobjects.TVPagePO;
-
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -21,6 +11,14 @@ import org.testng.annotations.Test;
 
 import commons.AbstractTest;
 import commons.ExcelUtils;
+import liveguru.pageobjects.CreateAccountPagePO;
+import liveguru.pageobjects.HomePagePO;
+import liveguru.pageobjects.LiveGuruPageManagerDriver;
+import liveguru.pageobjects.MyAccountPagePO;
+import liveguru.pageobjects.MyDashboardPagePO;
+import liveguru.pageobjects.MyWishlistPagePO;
+import liveguru.pageobjects.ShareWishlistPagePO;
+import liveguru.pageobjects.TVPagePO;
 
 public class TC_07_CreateAccountByDataProvider extends AbstractTest {
 
@@ -52,33 +50,32 @@ public class TC_07_CreateAccountByDataProvider extends AbstractTest {
 	}
 
 	@Test(dataProvider = "Authentication")
-	public void TC_01_CreateAccAndShareWishlist(String tcName, String usr, String pwd) {
-		System.out.println(tcName);
+	public void TC_01_CreateAccAndShareWishlist(String usr, String pwd) throws IOException {
 		System.out.println(usr);
 		System.out.println(pwd);
 		System.out.println("=======================");
-//		homePage.clickOnDynamicFooterLink(driver, "My Account");
-//		myAccountPage = (MyAccountPagePO) LiveGuruPageManagerDriver.getInstance(driver, "MyAccountPage");
-//		createAccountPage = myAccountPage.clickToCreateNewAccount();
-//		createAccountPage.inputAccountDynamicInformation(driver, "firstname", firstName);
-//		createAccountPage.inputAccountDynamicInformation(driver, "middlename", middleName);
-//		createAccountPage.inputAccountDynamicInformation(driver, "lastname", lastName);
-//		createAccountPage.inputAccountDynamicInformation(driver, "email_address", generateEmail());
-//		createAccountPage.inputAccountDynamicInformation(driver, "password", password);
-//		createAccountPage.inputAccountDynamicInformation(driver, "confirmation", password);
-//		myDashboardPage = createAccountPage.clickToRegisterAccount();
-//		verifyEquals(myDashboardPage.getSuccessMsg(driver), successCreateMessage);
-//		homePage.clickOnDynamicMenuLink(driver, "TV");
-//		tvPage = (TVPagePO) LiveGuruPageManagerDriver.getInstance(driver, "TVPage");
-//		tvPage.addAction(driver, tvName, "link-wishlist");
-//		myWishlistPage = (MyWishlistPagePO) LiveGuruPageManagerDriver.getInstance(driver, "MyWishlistPage");
-//		myWishlistPage.clickToDynamicButton(driver, shareWishlistBtn);
-//		shareWishlistPage = (ShareWishlistPagePO) LiveGuruPageManagerDriver.getInstance(driver, "ShareWishlistPage");
-//		shareWishlistPage.inputToTextArea("email_address", generateEmail());
-//		shareWishlistPage.inputToTextArea("message", shareMsg);
-//		shareWishlistPage.clickToDynamicButton(driver, shareWishlistBtn);
-//		myWishlistPage = (MyWishlistPagePO) LiveGuruPageManagerDriver.getInstance(driver, "MyWishlistPage");
-//		verifyEquals(myWishlistPage.getSuccessMsg(driver), successWishlistMessage);
+		homePage.clickOnDynamicFooterLink(driver, "My Account");
+		myAccountPage = (MyAccountPagePO) LiveGuruPageManagerDriver.getInstance(driver, "MyAccountPage");
+		createAccountPage = myAccountPage.clickToCreateNewAccount();
+		createAccountPage.inputAccountDynamicInformation(driver, "firstname", firstName);
+		createAccountPage.inputAccountDynamicInformation(driver, "middlename", middleName);
+		createAccountPage.inputAccountDynamicInformation(driver, "lastname", lastName);
+		createAccountPage.inputAccountDynamicInformation(driver, "email_address", generateEmail());
+		createAccountPage.inputAccountDynamicInformation(driver, "password", password);
+		createAccountPage.inputAccountDynamicInformation(driver, "confirmation", password);
+		myDashboardPage = createAccountPage.clickToRegisterAccount();
+		verifyEquals(myDashboardPage.getSuccessMsg(driver), successCreateMessage);
+		homePage.clickOnDynamicMenuLink(driver, "TV");
+		tvPage = (TVPagePO) LiveGuruPageManagerDriver.getInstance(driver, "TVPage");
+		tvPage.addAction(driver, tvName, "link-wishlist");
+		myWishlistPage = (MyWishlistPagePO) LiveGuruPageManagerDriver.getInstance(driver, "MyWishlistPage");
+		myWishlistPage.clickToDynamicButton(driver, shareWishlistBtn);
+		shareWishlistPage = (ShareWishlistPagePO) LiveGuruPageManagerDriver.getInstance(driver, "ShareWishlistPage");
+		shareWishlistPage.inputToTextArea("email_address", generateEmail());
+		shareWishlistPage.inputToTextArea("message", shareMsg);
+		shareWishlistPage.clickToDynamicButton(driver, shareWishlistBtn);
+		myWishlistPage = (MyWishlistPagePO) LiveGuruPageManagerDriver.getInstance(driver, "MyWishlistPage");
+		verifyEquals(myWishlistPage.getSuccessMsg(driver), successWishlistMessage);
 	}
 
 	@DataProvider(name = "Authentication")
