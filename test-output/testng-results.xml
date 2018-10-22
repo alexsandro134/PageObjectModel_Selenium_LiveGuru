@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
+    <line>
+      <![CDATA[2018-10-18 15:26:34,689 INFO  com.liveguru.TC_07_CreateAccountByDataProvider - Before Class: Open Url of Login Page
+]]>
+    </line>
+    <line>
+      <![CDATA[2018-10-18 15:26:46,502 INFO  com.liveguru.TC_07_CreateAccountByDataProvider - ---------- QUIT BROWSER SUCCESS ----------
+]]>
+    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="27729" started-at="2018-08-09T04:17:25Z" finished-at="2018-08-09T04:17:53Z">
+  <suite name="Suite" duration-ms="19383" started-at="2018-10-18T08:26:27Z" finished-at="2018-10-18T08:26:46Z">
     <groups>
     </groups>
-    <test name="Run on Chrome" duration-ms="27729" started-at="2018-08-09T04:17:25Z" finished-at="2018-08-09T04:17:53Z">
-      <class name="com.liveguru.TC_01_CostOfProduct">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.liveguru.TC_01_CostOfProduct@544fe44c]" name="beforeClass" is-config="true" duration-ms="8312" started-at="2018-08-09T11:17:25Z" finished-at="2018-08-09T11:17:33Z">
+    <test name="Run on CHROME" duration-ms="19383" started-at="2018-10-18T08:26:27Z" finished-at="2018-10-18T08:26:46Z">
+      <class name="com.liveguru.TC_07_CreateAccountByDataProvider">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.liveguru.TC_07_CreateAccountByDataProvider@60438a68]" name="beforeClass" is-config="true" duration-ms="17771" started-at="2018-10-18T15:26:27Z" finished-at="2018-10-18T15:26:44Z">
           <params>
             <param index="0">
               <value>
@@ -19,45 +27,112 @@
                 <![CDATA[2.41]]>
               </value>
             </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://live.guru99.com/]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[2018-10-18 15:26:34,689 INFO  com.liveguru.TC_07_CreateAccountByDataProvider - Before Class: Open Url of Login Page
+]]>
+            </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_01_CostOfProd()[pri:0, instance:com.liveguru.TC_01_CostOfProduct@544fe44c]" name="TC_01_CostOfProd" duration-ms="4626" started-at="2018-08-09T11:17:33Z" finished-at="2018-08-09T11:17:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_01_CostOfProd -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.liveguru.TC_01_CostOfProduct@544fe44c]" name="afterClass" is-config="true" duration-ms="1035" started-at="2018-08-09T11:17:38Z" finished-at="2018-08-09T11:17:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.liveguru.TC_01_CostOfProduct -->
-      <class name="com.liveguru.TC_02_VerifyDiscountCoupon">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.liveguru.TC_02_VerifyDiscountCoupon@31610302]" name="beforeClass" is-config="true" duration-ms="8175" started-at="2018-08-09T11:17:39Z" finished-at="2018-08-09T11:17:47Z">
+        <test-method status="PASS" signature="TC_01_CreateAccAndShareWishlist(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.liveguru.TC_07_CreateAccountByDataProvider@60438a68]" name="TC_01_CreateAccAndShareWishlist" duration-ms="6" started-at="2018-10-18T15:26:45Z" data-provider="Authentication" finished-at="2018-10-18T15:26:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[TC_07_CreateAccountByDataProvider]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[2.41]]>
+                <![CDATA[testuser_1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345678]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_02_VerifyCoupon()[pri:0, instance:com.liveguru.TC_02_VerifyDiscountCoupon@31610302]" name="TC_02_VerifyCoupon" duration-ms="4619" started-at="2018-08-09T11:17:47Z" finished-at="2018-08-09T11:17:52Z">
+        </test-method> <!-- TC_01_CreateAccAndShareWishlist -->
+        <test-method status="PASS" signature="TC_01_CreateAccAndShareWishlist(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.liveguru.TC_07_CreateAccountByDataProvider@60438a68]" name="TC_01_CreateAccAndShareWishlist" duration-ms="2" started-at="2018-10-18T15:26:45Z" data-provider="Authentication" finished-at="2018-10-18T15:26:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_07_CreateAccountByDataProvider]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testuser_2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[87654321]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_02_VerifyCoupon -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.liveguru.TC_02_VerifyDiscountCoupon@31610302]" name="afterClass" is-config="true" duration-ms="948" started-at="2018-08-09T11:17:52Z" finished-at="2018-08-09T11:17:53Z">
+        </test-method> <!-- TC_01_CreateAccAndShareWishlist -->
+        <test-method status="PASS" signature="TC_01_CreateAccAndShareWishlist(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.liveguru.TC_07_CreateAccountByDataProvider@60438a68]" name="TC_01_CreateAccAndShareWishlist" duration-ms="1" started-at="2018-10-18T15:26:45Z" data-provider="Authentication" finished-at="2018-10-18T15:26:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_08_Check]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testuser_1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_CreateAccAndShareWishlist -->
+        <test-method status="PASS" signature="TC_01_CreateAccAndShareWishlist(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.liveguru.TC_07_CreateAccountByDataProvider@60438a68]" name="TC_01_CreateAccAndShareWishlist" duration-ms="2" started-at="2018-10-18T15:26:45Z" data-provider="Authentication" finished-at="2018-10-18T15:26:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_08_Check]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testuser_2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[87654321]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_CreateAccAndShareWishlist -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.liveguru.TC_07_CreateAccountByDataProvider@60438a68]" name="afterClass" is-config="true" duration-ms="1017" started-at="2018-10-18T15:26:45Z" finished-at="2018-10-18T15:26:46Z">
+          <reporter-output>
+            <line>
+              <![CDATA[2018-10-18 15:26:46,502 INFO  com.liveguru.TC_07_CreateAccountByDataProvider - ---------- QUIT BROWSER SUCCESS ----------
+]]>
+            </line>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.liveguru.TC_02_VerifyDiscountCoupon -->
-    </test> <!-- Run on Chrome -->
+      </class> <!-- com.liveguru.TC_07_CreateAccountByDataProvider -->
+    </test> <!-- Run on CHROME -->
   </suite> <!-- Suite -->
 </testng-results>
