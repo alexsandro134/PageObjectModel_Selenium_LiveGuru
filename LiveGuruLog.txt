@@ -1,2 +1,1 @@
-2018-10-18 15:26:34,689 INFO  com.liveguru.TC_07_CreateAccountByDataProvider - Before Class: Open Url of Login Page
-2018-10-18 15:26:46,502 INFO  com.liveguru.TC_07_CreateAccountByDataProvider - ---------- QUIT BROWSER SUCCESS ----------
+2018-10-18 22:31:44,525 INFO  com.liveguru.TC_07_CreateAccountByDataProvider - Before Class: Open Url of Login Page
