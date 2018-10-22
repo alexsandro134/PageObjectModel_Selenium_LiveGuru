@@ -552,4 +552,29 @@ public class AbstractPage {
 		waitForControlVisible(driver, LiveGuruAbstractPageUI.DYNAMIC_INPUT_INFORMATION, idInput);
 		sendkeyToElement(driver, text, LiveGuruAbstractPageUI.DYNAMIC_INPUT_INFORMATION, idInput);
 	}
+
+	public void selectCustomDropdownList(WebDriver driver, String dropdown, String listItems, String valueItem) throws Exception {
+		// Click vào dropdown
+		WebElement dropdownElement = driver.findElement(By.xpath(dropdown));
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", dropdownElement);
+		dropdownElement.click();
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		// Get tất cả item trong dropdown vào 1 list element (List <WebElement>)
+		List<WebElement> allItems = driver.findElements(By.xpath(listItems));
+		// Wait để tất cả phần tử trong dropdown được hiển thị
+		wait.until(ExpectedConditions.visibilityOfAllElements(allItems));
+		// Dùng vòng lặp for duyệt qua từng phần tử
+		for (WebElement item : allItems) {
+			if (item.getText().trim().equals(valueItem)) {
+				// Scroll to item
+				((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", item);
+				// Check item displayed
+				item.isDisplayed();
+				// Nếu actual text = expected text thì click vào phần tử đó và
+				// break khỏi vòng lặp
+				item.click();
+				break;
+			}
+		}
+	}
 }
