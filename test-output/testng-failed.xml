@@ -13,8 +13,67 @@
     <parameter name="browser" value="chrome"/>
     <parameter name="version" value="2.41"/>
     <parameter name="url" value="http://live.guru99.com/"/>
+    <packages>
+      <package name="com.liveguru"/>
+    </packages>
     <classes>
+      <class name="com.liveguru.TC_01_CostOfProduct"/>
+      <class name="com.liveguru.TC_02_VerifyDiscountCoupon"/>
+      <class name="com.liveguru.TC_03_AddOverQuantiyInStock"/>
+      <class name="com.liveguru.TC_04_CompareProducts"/>
+      <class name="com.liveguru.TC_05_CreateAccountSuccessful"/>
+      <class name="com.liveguru.TC_06_UserPurcharseProd"/>
       <class name="com.liveguru.TC_07_CreateAccountByDataProvider"/>
     </classes>
   </test> <!-- Run on CHROME -->
+  <test name="Run on CHROME(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value="2.41"/>
+    <parameter name="url" value="http://live.guru99.com/"/>
+    <classes>
+      <class name="com.liveguru.TC_04_CompareProducts">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.liveguru.TC_04_CompareProducts -->
+      <class name="com.liveguru.TC_03_AddOverQuantiyInStock">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.liveguru.TC_03_AddOverQuantiyInStock -->
+      <class name="com.liveguru.TC_05_CreateAccountSuccessful">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.liveguru.TC_05_CreateAccountSuccessful -->
+      <class name="com.liveguru.TC_07_CreateAccountByDataProvider">
+        <methods>
+          <include name="TC_01_CreateAccAndShareWishlist" invocation-numbers="1 2 3"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.liveguru.TC_07_CreateAccountByDataProvider -->
+      <class name="com.liveguru.TC_01_CostOfProduct">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.liveguru.TC_01_CostOfProduct -->
+      <class name="com.liveguru.TC_06_UserPurcharseProd">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.liveguru.TC_06_UserPurcharseProd -->
+      <class name="com.liveguru.TC_02_VerifyDiscountCoupon">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.liveguru.TC_02_VerifyDiscountCoupon -->
+    </classes>
+  </test> <!-- Run on CHROME(failed) -->
 </suite> <!-- Failed suite [Suite] -->

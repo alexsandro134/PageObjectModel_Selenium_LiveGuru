@@ -19,8 +19,6 @@
 		<packages>
 			<package name="com.liveguru" />
 		</packages>
-		<!-- <classes> <class name="com.liveguru.TC_07_CreateAccountByDataProvider"> 
-			</class> </classes> -->
 	</test>
 
 	<!-- <test name="Run on CHROME HEADLESS"> <parameter name="browser" value="chrome_headless" 

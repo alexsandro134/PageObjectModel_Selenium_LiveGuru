@@ -200,6 +200,11 @@ public class AbstractTest {
 				Process process = Runtime.getRuntime().exec(cmd);
 				process.waitFor();
 			}
+			if (driver.toString().toLowerCase().contains("firefox")) {
+				cmd = "taskkill /F /FI \"IMAGENAME eq geckodriver.exe*\"";
+				Process process = Runtime.getRuntime().exec(cmd);
+				process.waitFor();
+			}
 			log.info("---------- QUIT BROWSER SUCCESS ----------");
 		} catch (Exception e) {
 			System.out.println(e.getMessage());

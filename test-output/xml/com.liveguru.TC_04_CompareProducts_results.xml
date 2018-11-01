@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="5.037">
+           time="16.769">
   <properties />
   
   
-            <testcase name="TC_01_CompareProd" time="5.037" classname="com.liveguru.TC_04_CompareProducts" />
+            <testcase name="TC_01_CompareProd" time="16.769" classname="com.liveguru.TC_04_CompareProducts" />
       
 </testsuite>

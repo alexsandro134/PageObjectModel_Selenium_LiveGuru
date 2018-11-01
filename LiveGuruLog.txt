@@ -1,49 +1,206 @@
-2018-11-01 07:22:46,189 INFO  com.liveguru.TC_01_CostOfProduct - Before Class: Open Url of Login Page
-2018-11-01 07:22:54,851 INFO  com.liveguru.TC_01_CostOfProduct - SONY XPERIA is equals SONY XPERIA
-2018-11-01 07:22:54,851 INFO  com.liveguru.TC_01_CostOfProduct - ----------------- PASSED -----------------
-2018-11-01 07:22:54,851 INFO  com.liveguru.TC_01_CostOfProduct - $100.00 is equals $100.00
-2018-11-01 07:22:54,851 INFO  com.liveguru.TC_01_CostOfProduct - ----------------- PASSED -----------------
-2018-11-01 07:22:56,298 INFO  com.liveguru.TC_01_CostOfProduct - ---------- QUIT BROWSER SUCCESS ----------
-2018-11-01 07:22:59,388 INFO  com.liveguru.TC_02_VerifyDiscountCoupon - Before Class: Open Url of Login Page
-2018-11-01 07:23:07,477 INFO  com.liveguru.TC_02_VerifyDiscountCoupon - ----------------- PASSED -----------------
-2018-11-01 07:23:08,430 INFO  com.liveguru.TC_02_VerifyDiscountCoupon - ---------- QUIT BROWSER SUCCESS ----------
-2018-11-01 07:23:11,148 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - Before Class: Open Url of Login Page
-2018-11-01 07:23:19,297 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ----------------- PASSED -----------------
-2018-11-01 07:23:19,379 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - * The maximum quantity allowed for purchase is 500. is equals * The maximum quantity allowed for purchase is 500.
-2018-11-01 07:23:19,379 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ----------------- PASSED -----------------
-2018-11-01 07:23:19,379 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - Click to Empty Cart
-2018-11-01 07:23:20,252 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - Verify Empty Msg is displayed
-2018-11-01 07:23:20,299 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ----------------- PASSED -----------------
-2018-11-01 07:23:20,299 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - Verify content of Empty Msg
-2018-11-01 07:23:20,391 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - SHOPPING CART IS EMPTY is equals SHOPPING CART IS EMPTY
-2018-11-01 07:23:20,391 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ----------------- PASSED -----------------
-2018-11-01 07:23:21,398 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ---------- QUIT BROWSER SUCCESS ----------
-2018-11-01 07:23:24,174 INFO  com.liveguru.TC_04_CompareProducts - Before Class: Open Url of Login Page
-2018-11-01 07:23:32,869 INFO  com.liveguru.TC_04_CompareProducts - COMPARE PRODUCTS is equals COMPARE PRODUCTS
-2018-11-01 07:23:32,869 INFO  com.liveguru.TC_04_CompareProducts - ----------------- PASSED -----------------
-2018-11-01 07:23:32,892 INFO  com.liveguru.TC_04_CompareProducts - 2 is equals 2
-2018-11-01 07:23:32,892 INFO  com.liveguru.TC_04_CompareProducts - ----------------- PASSED -----------------
-2018-11-01 07:23:32,947 INFO  com.liveguru.TC_04_CompareProducts - ----------------- PASSED -----------------
-2018-11-01 07:23:33,048 INFO  com.liveguru.TC_04_CompareProducts - ----------------- PASSED -----------------
-2018-11-01 07:23:34,169 INFO  com.liveguru.TC_04_CompareProducts - ---------- QUIT BROWSER SUCCESS ----------
-2018-11-01 07:23:36,924 INFO  com.liveguru.TC_05_CreateAccountSuccessful - Before Class: Open Url of Login Page
-2018-11-01 07:23:45,876 INFO  com.liveguru.TC_05_CreateAccountSuccessful - Thank you for registering with Main Website Store. is equals Thank you for registering with Main Website Store.
-2018-11-01 07:23:45,876 INFO  com.liveguru.TC_05_CreateAccountSuccessful - ----------------- PASSED -----------------
-2018-11-01 07:23:50,994 INFO  com.liveguru.TC_05_CreateAccountSuccessful - Your Wishlist has been shared. is equals Your Wishlist has been shared.
-2018-11-01 07:23:50,994 INFO  com.liveguru.TC_05_CreateAccountSuccessful - ----------------- PASSED -----------------
-2018-11-01 07:23:52,099 INFO  com.liveguru.TC_05_CreateAccountSuccessful - ---------- QUIT BROWSER SUCCESS ----------
-2018-11-01 07:23:55,049 INFO  com.liveguru.TC_06_UserPurcharseProd - Before Class: Open Url of Login Page
-2018-11-01 07:24:01,706 INFO  com.liveguru.TC_06_UserPurcharseProd - ----------------- PASSED -----------------
-2018-11-01 07:24:06,936 INFO  com.liveguru.TC_06_UserPurcharseProd - ----------------- PASSED -----------------
-2018-11-01 07:24:08,192 INFO  com.liveguru.TC_06_UserPurcharseProd - $620.00 is equals $620.00
-2018-11-01 07:24:08,192 INFO  com.liveguru.TC_06_UserPurcharseProd - ----------------- PASSED -----------------
-2018-11-01 07:24:13,674 INFO  com.liveguru.TC_06_UserPurcharseProd - THANK YOU FOR YOUR PURCHASE! is equals THANK YOU FOR YOUR PURCHASE!
-2018-11-01 07:24:13,674 INFO  com.liveguru.TC_06_UserPurcharseProd - ----------------- PASSED -----------------
-2018-11-01 07:24:13,769 INFO  com.liveguru.TC_06_UserPurcharseProd - 100008217
-2018-11-01 07:24:15,153 INFO  com.liveguru.TC_06_UserPurcharseProd - ---------- QUIT BROWSER SUCCESS ----------
-2018-11-01 07:24:18,299 INFO  com.liveguru.TC_07_CreateAccountByDataProvider - Before Class: Open Url of Login Page
-2018-11-01 07:24:29,465 INFO  com.liveguru.TC_07_CreateAccountByDataProvider - Thank you for registering with Main Website Store. is equals Thank you for registering with Main Website Store.
-2018-11-01 07:24:29,465 INFO  com.liveguru.TC_07_CreateAccountByDataProvider - ----------------- PASSED -----------------
-2018-11-01 07:24:36,252 INFO  com.liveguru.TC_07_CreateAccountByDataProvider - Your Wishlist has been shared. is equals Your Wishlist has been shared.
-2018-11-01 07:24:36,253 INFO  com.liveguru.TC_07_CreateAccountByDataProvider - ----------------- PASSED -----------------
-2018-11-01 07:24:39,198 INFO  com.liveguru.TC_07_CreateAccountByDataProvider - ---------- QUIT BROWSER SUCCESS ----------
+2018-11-01 14:40:52,090 INFO  com.liveguru.TC_01_CostOfProduct - Before Class: Open Url of Login Page
+2018-11-01 14:41:04,876 INFO  liveguru.pageobjects.HomePagePO - Wait until element with dynamic xpath: //nav[@id='nav']//a[text() = 'Mobile'] visible
+2018-11-01 14:41:10,107 INFO  liveguru.pageobjects.HomePagePO - Click to element with dynamic xpath: //nav[@id='nav']//a[text() = 'Mobile']
+2018-11-01 14:41:10,145 INFO  liveguru.pageobjects.MobilePagePO - Wait until element with dynamic xpath: //h2[a[text()='Sony Xperia']]/following-sibling::div//span[contains(@id,'product-price')] visible
+2018-11-01 14:41:10,256 INFO  liveguru.pageobjects.MobilePagePO - Wait until element with dynamic xpath: //a[text()='Sony Xperia'] visible
+2018-11-01 14:41:14,443 INFO  liveguru.pageobjects.MobilePagePO - Click to element with dynamic xpath: //a[text()='Sony Xperia']
+2018-11-01 14:41:14,507 INFO  liveguru.pageobjects.DetailProductPagePO - Wait until element with xpath: //div[@class='product-name']/span visible
+2018-11-01 14:41:14,525 INFO  liveguru.pageobjects.DetailProductPagePO - Wait until element with xpath: //div[@class='product-name']/span visible
+2018-11-01 14:41:14,559 INFO  liveguru.pageobjects.DetailProductPagePO - Text of element with xpath: //div[@class='product-name']/span is SONY XPERIA
+2018-11-01 14:41:14,592 INFO  liveguru.pageobjects.DetailProductPagePO - Wait until element with xpath: //span[contains(@id,'product-price')] visible
+2018-11-01 14:41:14,611 INFO  liveguru.pageobjects.DetailProductPagePO - Wait until element with xpath: //span[contains(@id,'product-price')] visible
+2018-11-01 14:41:14,649 INFO  liveguru.pageobjects.DetailProductPagePO - Text of element with xpath: //span[contains(@id,'product-price')] is $100.00
+2018-11-01 14:41:14,656 INFO  com.liveguru.TC_01_CostOfProduct - SONY XPERIA is equals SONY XPERIA
+2018-11-01 14:41:14,656 INFO  com.liveguru.TC_01_CostOfProduct - ----------------- PASSED -----------------
+2018-11-01 14:41:14,656 INFO  com.liveguru.TC_01_CostOfProduct - $100.00 is equals $100.00
+2018-11-01 14:41:14,657 INFO  com.liveguru.TC_01_CostOfProduct - ----------------- PASSED -----------------
+2018-11-01 14:41:16,092 INFO  com.liveguru.TC_01_CostOfProduct - ---------- QUIT BROWSER SUCCESS ----------
+2018-11-01 14:41:21,783 INFO  com.liveguru.TC_02_VerifyDiscountCoupon - Before Class: Open Url of Login Page
+2018-11-01 14:41:30,195 INFO  liveguru.pageobjects.HomePagePO - Wait until element with dynamic xpath: //nav[@id='nav']//a[text() = 'Mobile'] visible
+2018-11-01 14:41:34,799 INFO  liveguru.pageobjects.HomePagePO - Click to element with dynamic xpath: //nav[@id='nav']//a[text() = 'Mobile']
+2018-11-01 14:41:34,838 INFO  liveguru.pageobjects.MobilePagePO - Wait until element with dynamic xpath: //h2[a[text()='IPhone']]/following-sibling::div[@class='actions']/button visible
+2018-11-01 14:41:38,610 INFO  liveguru.pageobjects.MobilePagePO - Click to element with dynamic xpath: //h2[a[text()='IPhone']]/following-sibling::div[@class='actions']/button
+2018-11-01 14:41:38,747 INFO  liveguru.pageobjects.CheckoutPagePO - Sendkey GURU50 to element with xpath: //input[@id='coupon_code']
+2018-11-01 14:41:40,204 INFO  liveguru.pageobjects.CheckoutPagePO - Click to element with xpath: //button[@value='Apply']
+2018-11-01 14:41:40,245 INFO  liveguru.pageobjects.CheckoutPagePO - Element with dynamic xpath: //td[contains(text(),'GURU50')]/following-sibling::td/spanis displayed
+2018-11-01 14:41:40,245 INFO  com.liveguru.TC_02_VerifyDiscountCoupon - ----------------- PASSED -----------------
+2018-11-01 14:41:41,216 INFO  com.liveguru.TC_02_VerifyDiscountCoupon - ---------- QUIT BROWSER SUCCESS ----------
+2018-11-01 14:41:46,306 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - Before Class: Open Url of Login Page
+2018-11-01 14:41:54,604 INFO  liveguru.pageobjects.HomePagePO - Wait until element with dynamic xpath: //nav[@id='nav']//a[text() = 'Mobile'] visible
+2018-11-01 14:41:58,932 INFO  liveguru.pageobjects.HomePagePO - Click to element with dynamic xpath: //nav[@id='nav']//a[text() = 'Mobile']
+2018-11-01 14:41:58,982 INFO  liveguru.pageobjects.MobilePagePO - Wait until element with dynamic xpath: //h2[a[text()='Sony Xperia']]/following-sibling::div[@class='actions']/button visible
+2018-11-01 14:42:01,850 INFO  liveguru.pageobjects.MobilePagePO - Click to element with dynamic xpath: //h2[a[text()='Sony Xperia']]/following-sibling::div[@class='actions']/button
+2018-11-01 14:42:01,938 INFO  liveguru.pageobjects.CheckoutPagePO - Click to element with xpath: //input[@title='Qty']
+2018-11-01 14:42:02,009 INFO  liveguru.pageobjects.CheckoutPagePO - Sendkey 1000 to element with xpath: //input[@title='Qty']
+2018-11-01 14:42:03,928 INFO  liveguru.pageobjects.CheckoutPagePO - Click to element with xpath: //button[span[span[text()='Update']]]
+2018-11-01 14:42:03,977 INFO  liveguru.pageobjects.CheckoutPagePO - Element with xpath: //p[@class='item-msg error'] is displayed
+2018-11-01 14:42:03,977 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ----------------- PASSED -----------------
+2018-11-01 14:42:03,999 INFO  liveguru.pageobjects.CheckoutPagePO - Wait until element with xpath: //p[@class='item-msg error'] visible
+2018-11-01 14:42:04,027 INFO  liveguru.pageobjects.CheckoutPagePO - Text of element with xpath: //p[@class='item-msg error'] is * The maximum quantity allowed for purchase is 500.
+2018-11-01 14:42:04,027 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - * The maximum quantity allowed for purchase is 500. is equals * The maximum quantity allowed for purchase is 500.
+2018-11-01 14:42:04,027 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ----------------- PASSED -----------------
+2018-11-01 14:42:04,027 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - Click to Empty Cart
+2018-11-01 14:42:05,539 INFO  liveguru.pageobjects.CheckoutPagePO - Click to element with xpath: //button[span[span[text()='Empty Cart']]]
+2018-11-01 14:42:05,540 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - Verify Empty Msg is displayed
+2018-11-01 14:42:05,572 INFO  liveguru.pageobjects.EmptyCartPagePO - Element with xpath: //h1 is displayed
+2018-11-01 14:42:05,572 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ----------------- PASSED -----------------
+2018-11-01 14:42:05,572 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - Verify content of Empty Msg
+2018-11-01 14:42:05,598 INFO  liveguru.pageobjects.EmptyCartPagePO - Wait until element with xpath: //h1 visible
+2018-11-01 14:42:05,628 INFO  liveguru.pageobjects.EmptyCartPagePO - Text of element with xpath: //h1 is SHOPPING CART IS EMPTY
+2018-11-01 14:42:05,628 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - SHOPPING CART IS EMPTY is equals SHOPPING CART IS EMPTY
+2018-11-01 14:42:05,628 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ----------------- PASSED -----------------
+2018-11-01 14:42:06,501 INFO  com.liveguru.TC_03_AddOverQuantiyInStock - ---------- QUIT BROWSER SUCCESS ----------
+2018-11-01 14:42:11,937 INFO  com.liveguru.TC_04_CompareProducts - Before Class: Open Url of Login Page
+2018-11-01 14:42:20,261 INFO  liveguru.pageobjects.HomePagePO - Wait until element with dynamic xpath: //nav[@id='nav']//a[text() = 'Mobile'] visible
+2018-11-01 14:42:26,229 INFO  liveguru.pageobjects.HomePagePO - Click to element with dynamic xpath: //nav[@id='nav']//a[text() = 'Mobile']
+2018-11-01 14:42:28,849 INFO  liveguru.pageobjects.MobilePagePO - Click to element with dynamic xpath: //h2[a[text()='Sony Xperia']]/following-sibling::div[@class='actions']//a[@class='link-compare']
+2018-11-01 14:42:33,129 INFO  liveguru.pageobjects.MobilePagePO - Click to element with dynamic xpath: //h2[a[text()='IPhone']]/following-sibling::div[@class='actions']//a[@class='link-compare']
+2018-11-01 14:42:33,146 INFO  liveguru.pageobjects.MobilePagePO - Size of list elements with xpath: //ol[@id='compare-items']/li is: 2
+2018-11-01 14:42:33,249 INFO  liveguru.pageobjects.MobilePagePO - Click to element with xpath: //button[@title='Compare']
+2018-11-01 14:42:36,821 INFO  liveguru.pageobjects.MobilePagePO - Switch to Window with title:Products Comparison List - Magento Commerce
+2018-11-01 14:42:36,854 INFO  liveguru.pageobjects.ComparePagePO - Wait until element with xpath: //h1 visible
+2018-11-01 14:42:36,888 INFO  liveguru.pageobjects.ComparePagePO - Text of element with xpath: //h1 is COMPARE PRODUCTS
+2018-11-01 14:42:36,889 INFO  com.liveguru.TC_04_CompareProducts - COMPARE PRODUCTS is equals COMPARE PRODUCTS
+2018-11-01 14:42:36,889 INFO  com.liveguru.TC_04_CompareProducts - ----------------- PASSED -----------------
+2018-11-01 14:42:36,906 INFO  liveguru.pageobjects.ComparePagePO - Size of list elements with xpath: //h2[@class='product-name'] is: 2
+2018-11-01 14:42:36,906 INFO  com.liveguru.TC_04_CompareProducts - 2 is equals 2
+2018-11-01 14:42:36,906 INFO  com.liveguru.TC_04_CompareProducts - ----------------- PASSED -----------------
+2018-11-01 14:42:36,934 INFO  liveguru.pageobjects.ComparePagePO - Element with dynamic xpath: //h2[@class='product-name']/a[text()='IPhone']is displayed
+2018-11-01 14:42:36,935 INFO  com.liveguru.TC_04_CompareProducts - ----------------- PASSED -----------------
+2018-11-01 14:42:36,967 INFO  liveguru.pageobjects.ComparePagePO - Element with dynamic xpath: //h2[@class='product-name']/a[text()='Sony Xperia']is displayed
+2018-11-01 14:42:36,968 INFO  com.liveguru.TC_04_CompareProducts - ----------------- PASSED -----------------
+2018-11-01 14:42:38,052 INFO  com.liveguru.TC_04_CompareProducts - ---------- QUIT BROWSER SUCCESS ----------
+2018-11-01 14:42:43,294 INFO  com.liveguru.TC_05_CreateAccountSuccessful - Before Class: Open Url of Login Page
+2018-11-01 14:42:53,034 INFO  liveguru.pageobjects.HomePagePO - Wait until element with dynamic xpath: //div[@class='footer']//a[text()='My Account'] visible
+2018-11-01 14:42:54,600 INFO  liveguru.pageobjects.HomePagePO - Click to element with dynamic xpath: //div[@class='footer']//a[text()='My Account']
+2018-11-01 14:42:55,392 INFO  liveguru.pageobjects.MyAccountPagePO - Click to element with xpath: //a[@title='Create an Account']
+2018-11-01 14:42:55,423 INFO  liveguru.pageobjects.CreateAccountPagePO - Wait until element with dynamic xpath: //input[@id='firstname'] visible
+2018-11-01 14:42:55,526 INFO  liveguru.pageobjects.CreateAccountPagePO - Sendkey TAI to element with dynamic xpath: //input[@id='firstname']
+2018-11-01 14:42:55,561 INFO  liveguru.pageobjects.CreateAccountPagePO - Wait until element with dynamic xpath: //input[@id='middlename'] visible
+2018-11-01 14:42:55,661 INFO  liveguru.pageobjects.CreateAccountPagePO - Sendkey THIEN to element with dynamic xpath: //input[@id='middlename']
+2018-11-01 14:42:55,698 INFO  liveguru.pageobjects.CreateAccountPagePO - Wait until element with dynamic xpath: //input[@id='lastname'] visible
+2018-11-01 14:42:55,787 INFO  liveguru.pageobjects.CreateAccountPagePO - Sendkey LE to element with dynamic xpath: //input[@id='lastname']
+2018-11-01 14:42:55,816 INFO  liveguru.pageobjects.CreateAccountPagePO - Wait until element with dynamic xpath: //input[@id='email_address'] visible
+2018-11-01 14:42:55,939 INFO  liveguru.pageobjects.CreateAccountPagePO - Sendkey jo0mu0lygg@gmail.com to element with dynamic xpath: //input[@id='email_address']
+2018-11-01 14:42:55,980 INFO  liveguru.pageobjects.CreateAccountPagePO - Wait until element with dynamic xpath: //input[@id='password'] visible
+2018-11-01 14:42:56,083 INFO  liveguru.pageobjects.CreateAccountPagePO - Sendkey MyP@ssw0rd123 to element with dynamic xpath: //input[@id='password']
+2018-11-01 14:42:56,122 INFO  liveguru.pageobjects.CreateAccountPagePO - Wait until element with dynamic xpath: //input[@id='confirmation'] visible
+2018-11-01 14:42:56,242 INFO  liveguru.pageobjects.CreateAccountPagePO - Sendkey MyP@ssw0rd123 to element with dynamic xpath: //input[@id='confirmation']
+2018-11-01 14:42:58,692 INFO  liveguru.pageobjects.CreateAccountPagePO - Click to element with xpath: //button[@title='Register']
+2018-11-01 14:42:58,731 INFO  liveguru.pageobjects.MyDashboardPagePO - Wait until element with xpath: //li[@class='success-msg']//span visible
+2018-11-01 14:42:58,750 INFO  liveguru.pageobjects.MyDashboardPagePO - Wait until element with xpath: //li[@class='success-msg']//span visible
+2018-11-01 14:42:58,781 INFO  liveguru.pageobjects.MyDashboardPagePO - Text of element with xpath: //li[@class='success-msg']//span is Thank you for registering with Main Website Store.
+2018-11-01 14:42:58,781 INFO  com.liveguru.TC_05_CreateAccountSuccessful - Thank you for registering with Main Website Store. is equals Thank you for registering with Main Website Store.
+2018-11-01 14:42:58,781 INFO  com.liveguru.TC_05_CreateAccountSuccessful - ----------------- PASSED -----------------
+2018-11-01 14:42:58,816 INFO  liveguru.pageobjects.HomePagePO - Wait until element with dynamic xpath: //nav[@id='nav']//a[text() = 'TV'] visible
+2018-11-01 14:43:03,304 INFO  liveguru.pageobjects.HomePagePO - Click to element with dynamic xpath: //nav[@id='nav']//a[text() = 'TV']
+2018-11-01 14:43:06,315 INFO  liveguru.pageobjects.TVPagePO - Click to element with dynamic xpath: //h2[a[text()='LG LCD']]/following-sibling::div[@class='actions']//a[@class='link-wishlist']
+2018-11-01 14:43:06,354 INFO  liveguru.pageobjects.MyWishlistPagePO - Wait until element with dynamic xpath: //button[@title='Share Wishlist'] visible
+2018-11-01 14:43:07,885 INFO  liveguru.pageobjects.MyWishlistPagePO - Click to element with dynamic xpath: //button[@title='Share Wishlist']
+2018-11-01 14:43:08,010 INFO  liveguru.pageobjects.ShareWishlistPagePO - Sendkey radxuum42m@gmail.com to element with dynamic xpath: //textarea[@id='email_address']
+2018-11-01 14:43:08,143 INFO  liveguru.pageobjects.ShareWishlistPagePO - Sendkey Sharing message tvPage Liveguru to element with dynamic xpath: //textarea[@id='message']
+2018-11-01 14:43:08,177 INFO  liveguru.pageobjects.ShareWishlistPagePO - Wait until element with dynamic xpath: //button[@title='Share Wishlist'] visible
+2018-11-01 14:43:09,727 INFO  liveguru.pageobjects.ShareWishlistPagePO - Click to element with dynamic xpath: //button[@title='Share Wishlist']
+2018-11-01 14:43:09,773 INFO  liveguru.pageobjects.MyWishlistPagePO - Wait until element with xpath: //li[@class='success-msg']//span visible
+2018-11-01 14:43:09,791 INFO  liveguru.pageobjects.MyWishlistPagePO - Wait until element with xpath: //li[@class='success-msg']//span visible
+2018-11-01 14:43:09,819 INFO  liveguru.pageobjects.MyWishlistPagePO - Text of element with xpath: //li[@class='success-msg']//span is Your Wishlist has been shared.
+2018-11-01 14:43:09,819 INFO  com.liveguru.TC_05_CreateAccountSuccessful - Your Wishlist has been shared. is equals Your Wishlist has been shared.
+2018-11-01 14:43:09,819 INFO  com.liveguru.TC_05_CreateAccountSuccessful - ----------------- PASSED -----------------
+2018-11-01 14:43:11,965 INFO  com.liveguru.TC_05_CreateAccountSuccessful - ---------- QUIT BROWSER SUCCESS ----------
+2018-11-01 14:43:20,038 INFO  com.liveguru.TC_06_UserPurcharseProd - Before Class: Open Url of Login Page
+2018-11-01 14:43:28,776 INFO  liveguru.pageobjects.HomePagePO - Wait until element with dynamic xpath: //div[@class='footer']//a[text()='My Account'] visible
+2018-11-01 14:43:30,575 INFO  liveguru.pageobjects.HomePagePO - Click to element with dynamic xpath: //div[@class='footer']//a[text()='My Account']
+2018-11-01 14:43:30,691 INFO  liveguru.pageobjects.MyAccountPagePO - Sendkey ttesstt@gmail.com to element with dynamic xpath: //input[@id='email']
+2018-11-01 14:43:30,775 INFO  liveguru.pageobjects.MyAccountPagePO - Sendkey 111222 to element with dynamic xpath: //input[@id='pass']
+2018-11-01 14:43:30,815 INFO  liveguru.pageobjects.MyAccountPagePO - Wait until element with dynamic xpath: //button[@title='Login'] visible
+2018-11-01 14:43:32,976 INFO  liveguru.pageobjects.MyAccountPagePO - Click to element with dynamic xpath: //button[@title='Login']
+2018-11-01 14:43:33,013 INFO  liveguru.pageobjects.MyDashboardPagePO - Element with xpath: //h1[text()='My Dashboard'] is displayed
+2018-11-01 14:43:33,013 INFO  com.liveguru.TC_06_UserPurcharseProd - ----------------- PASSED -----------------
+2018-11-01 14:43:33,049 INFO  liveguru.pageobjects.MyDashboardPagePO - Wait until element with dynamic xpath: //nav[@id='nav']//a[text() = 'TV'] visible
+2018-11-01 14:43:37,441 INFO  liveguru.pageobjects.MyDashboardPagePO - Click to element with dynamic xpath: //nav[@id='nav']//a[text() = 'TV']
+2018-11-01 14:43:39,949 INFO  liveguru.pageobjects.TVPagePO - Click to element with dynamic xpath: //h2[a[text()='LG LCD']]/following-sibling::div[@class='actions']//a[@class='link-wishlist']
+2018-11-01 14:43:39,995 INFO  liveguru.pageobjects.MyWishlistPagePO - Wait until element with dynamic xpath: //button[@title='Add to Cart'] visible
+2018-11-01 14:43:42,760 INFO  liveguru.pageobjects.MyWishlistPagePO - Click to element with dynamic xpath: //button[@title='Add to Cart']
+2018-11-01 14:43:42,801 INFO  liveguru.pageobjects.CheckoutPagePO - Wait until element with xpath: //select[@id='country'] visible
+2018-11-01 14:43:42,877 INFO  liveguru.pageobjects.CheckoutPagePO - Select United States in dropdown with xpath: //select[@id='country']
+2018-11-01 14:43:42,965 INFO  liveguru.pageobjects.CheckoutPagePO - Select New York in dropdown with xpath: //select[@id='region_id']
+2018-11-01 14:43:43,096 INFO  liveguru.pageobjects.CheckoutPagePO - Sendkey 543432 to element with xpath: //input[@id='postcode']
+2018-11-01 14:43:43,128 INFO  liveguru.pageobjects.CheckoutPagePO - Wait until element with dynamic xpath: //button[@title='Estimate'] visible
+2018-11-01 14:43:44,915 INFO  liveguru.pageobjects.CheckoutPagePO - Click to element with dynamic xpath: //button[@title='Estimate']
+2018-11-01 14:43:44,950 INFO  liveguru.pageobjects.CheckoutPagePO - Wait until element with xpath: //form[@id='co-shipping-method-form'] visible
+2018-11-01 14:43:44,975 INFO  liveguru.pageobjects.CheckoutPagePO - Element with xpath: //form[@id='co-shipping-method-form'] is displayed
+2018-11-01 14:43:44,975 INFO  com.liveguru.TC_06_UserPurcharseProd - ----------------- PASSED -----------------
+2018-11-01 14:43:45,034 INFO  liveguru.pageobjects.CheckoutPagePO - Click to element with xpath: //form[@id='co-shipping-method-form']//input[@type='radio']
+2018-11-01 14:43:45,070 INFO  liveguru.pageobjects.CheckoutPagePO - Wait until element with dynamic xpath: //button[@title='Update Total'] visible
+2018-11-01 14:43:47,012 INFO  liveguru.pageobjects.CheckoutPagePO - Click to element with dynamic xpath: //button[@title='Update Total']
+2018-11-01 14:43:47,048 INFO  liveguru.pageobjects.CheckoutPagePO - Wait until element with xpath: //td[@class='product-cart-price']//span[@class='price'] visible
+2018-11-01 14:43:47,081 INFO  liveguru.pageobjects.CheckoutPagePO - Text of element with xpath: //td[@class='product-cart-price']//span[@class='price'] is $615.00
+2018-11-01 14:43:47,138 INFO  liveguru.pageobjects.CheckoutPagePO - Wait until element with xpath: //table[@id='shopping-cart-totals-table']//td[contains(text(),'Shipping')] visible
+2018-11-01 14:43:47,170 INFO  liveguru.pageobjects.CheckoutPagePO - Wait until element with xpath: //table[@id='shopping-cart-totals-table']//strong/span[@class='price'] visible
+2018-11-01 14:43:47,203 INFO  liveguru.pageobjects.CheckoutPagePO - Text of element with xpath: //table[@id='shopping-cart-totals-table']//strong/span[@class='price'] is $620.00
+2018-11-01 14:43:47,203 INFO  com.liveguru.TC_06_UserPurcharseProd - $620.00 is equals $620.00
+2018-11-01 14:43:47,203 INFO  com.liveguru.TC_06_UserPurcharseProd - ----------------- PASSED -----------------
+2018-11-01 14:43:47,233 INFO  liveguru.pageobjects.CheckoutPagePO - Wait until element with dynamic xpath: //button[@title='Proceed to Checkout'] visible
+2018-11-01 14:43:50,115 INFO  liveguru.pageobjects.CheckoutPagePO - Click to element with dynamic xpath: //button[@title='Proceed to Checkout']
+2018-11-01 14:43:50,158 INFO  liveguru.pageobjects.BillingPagePO - Wait until element with dynamic xpath: //button[@title='Continue'] visible
+2018-11-01 14:43:50,229 INFO  liveguru.pageobjects.BillingPagePO - Click to element with dynamic xpath: //button[@title='Continue']
+2018-11-01 14:43:52,391 INFO  liveguru.pageobjects.BillingPagePO - Wait until element with dynamic xpath: //div[@id='shipping-method-buttons-container']//button[@type='button'] visible
+2018-11-01 14:43:52,455 INFO  liveguru.pageobjects.BillingPagePO - Click to element with dynamic xpath: //div[@id='shipping-method-buttons-container']//button[@type='button']
+2018-11-01 14:43:53,531 INFO  liveguru.pageobjects.BillingPagePO - Wait until element with dynamic xpath: //input[@type='radio' and @id='p_method_checkmo'] visible
+2018-11-01 14:43:53,595 INFO  liveguru.pageobjects.BillingPagePO - Click to element with dynamic xpath: //input[@type='radio' and @id='p_method_checkmo']
+2018-11-01 14:43:53,630 INFO  liveguru.pageobjects.BillingPagePO - Wait until element with dynamic xpath: //div[@id='payment-buttons-container']//button[@type='button'] visible
+2018-11-01 14:43:53,699 INFO  liveguru.pageobjects.BillingPagePO - Click to element with dynamic xpath: //div[@id='payment-buttons-container']//button[@type='button']
+2018-11-01 14:43:55,287 INFO  liveguru.pageobjects.BillingPagePO - Wait until element with dynamic xpath: //button[@title='Place Order'] visible
+2018-11-01 14:43:55,372 INFO  liveguru.pageobjects.BillingPagePO - Click to element with dynamic xpath: //button[@title='Place Order']
+2018-11-01 14:43:57,112 INFO  liveguru.pageobjects.SuccessOrderPagePO - Wait until element with xpath: //h2[@class='sub-title'] visible
+2018-11-01 14:43:57,129 INFO  liveguru.pageobjects.SuccessOrderPagePO - Wait until element with xpath: //h2[@class='sub-title'] visible
+2018-11-01 14:43:57,162 INFO  liveguru.pageobjects.SuccessOrderPagePO - Text of element with xpath: //h2[@class='sub-title'] is THANK YOU FOR YOUR PURCHASE!
+2018-11-01 14:43:57,162 INFO  com.liveguru.TC_06_UserPurcharseProd - THANK YOU FOR YOUR PURCHASE! is equals THANK YOU FOR YOUR PURCHASE!
+2018-11-01 14:43:57,162 INFO  com.liveguru.TC_06_UserPurcharseProd - ----------------- PASSED -----------------
+2018-11-01 14:43:57,195 INFO  liveguru.pageobjects.SuccessOrderPagePO - Wait until element with xpath: //h2[@class='sub-title']/following-sibling::p/a visible
+2018-11-01 14:43:57,228 INFO  liveguru.pageobjects.SuccessOrderPagePO - Text of element with xpath: //h2[@class='sub-title']/following-sibling::p/a is 100008218
+2018-11-01 14:43:57,229 INFO  com.liveguru.TC_06_UserPurcharseProd - 100008218
+2018-11-01 14:43:58,246 INFO  com.liveguru.TC_06_UserPurcharseProd - ---------- QUIT BROWSER SUCCESS ----------
+2018-11-01 14:44:03,744 INFO  com.liveguru.TC_07_CreateAccountByDataProvider - Before Class: Open Url of Login Page
+2018-11-01 14:44:16,808 INFO  liveguru.pageobjects.HomePagePO - Wait until element with dynamic xpath: //div[@class='footer']//a[text()='My Account'] visible
+2018-11-01 14:44:18,493 INFO  liveguru.pageobjects.HomePagePO - Click to element with dynamic xpath: //div[@class='footer']//a[text()='My Account']
+2018-11-01 14:44:19,305 INFO  liveguru.pageobjects.MyAccountPagePO - Click to element with xpath: //a[@title='Create an Account']
+2018-11-01 14:44:19,335 INFO  liveguru.pageobjects.CreateAccountPagePO - Wait until element with dynamic xpath: //input[@id='firstname'] visible
+2018-11-01 14:44:19,422 INFO  liveguru.pageobjects.CreateAccountPagePO - Sendkey TAI to element with dynamic xpath: //input[@id='firstname']
+2018-11-01 14:44:19,453 INFO  liveguru.pageobjects.CreateAccountPagePO - Wait until element with dynamic xpath: //input[@id='middlename'] visible
+2018-11-01 14:44:19,538 INFO  liveguru.pageobjects.CreateAccountPagePO - Sendkey THIEN to element with dynamic xpath: //input[@id='middlename']
+2018-11-01 14:44:19,571 INFO  liveguru.pageobjects.CreateAccountPagePO - Wait until element with dynamic xpath: //input[@id='lastname'] visible
+2018-11-01 14:44:19,643 INFO  liveguru.pageobjects.CreateAccountPagePO - Sendkey LE to element with dynamic xpath: //input[@id='lastname']
+2018-11-01 14:44:19,672 INFO  liveguru.pageobjects.CreateAccountPagePO - Wait until element with dynamic xpath: //input[@id='email_address'] visible
+2018-11-01 14:44:19,785 INFO  liveguru.pageobjects.CreateAccountPagePO - Sendkey f0ijc0sylb@gmail.com to element with dynamic xpath: //input[@id='email_address']
+2018-11-01 14:44:19,812 INFO  liveguru.pageobjects.CreateAccountPagePO - Wait until element with dynamic xpath: //input[@id='password'] visible
+2018-11-01 14:44:19,903 INFO  liveguru.pageobjects.CreateAccountPagePO - Sendkey MyP@ssw0rd123 to element with dynamic xpath: //input[@id='password']
+2018-11-01 14:44:19,932 INFO  liveguru.pageobjects.CreateAccountPagePO - Wait until element with dynamic xpath: //input[@id='confirmation'] visible
+2018-11-01 14:44:20,031 INFO  liveguru.pageobjects.CreateAccountPagePO - Sendkey MyP@ssw0rd123 to element with dynamic xpath: //input[@id='confirmation']
+2018-11-01 14:44:23,005 INFO  liveguru.pageobjects.CreateAccountPagePO - Click to element with xpath: //button[@title='Register']
+2018-11-01 14:44:23,037 INFO  liveguru.pageobjects.MyDashboardPagePO - Wait until element with xpath: //li[@class='success-msg']//span visible
+2018-11-01 14:44:23,055 INFO  liveguru.pageobjects.MyDashboardPagePO - Wait until element with xpath: //li[@class='success-msg']//span visible
+2018-11-01 14:44:23,087 INFO  liveguru.pageobjects.MyDashboardPagePO - Text of element with xpath: //li[@class='success-msg']//span is Thank you for registering with Main Website Store.
+2018-11-01 14:44:23,087 INFO  com.liveguru.TC_07_CreateAccountByDataProvider - Thank you for registering with Main Website Store. is equals Thank you for registering with Main Website Store.
+2018-11-01 14:44:23,087 INFO  com.liveguru.TC_07_CreateAccountByDataProvider - ----------------- PASSED -----------------
+2018-11-01 14:44:23,116 INFO  liveguru.pageobjects.HomePagePO - Wait until element with dynamic xpath: //nav[@id='nav']//a[text() = 'TV'] visible
+2018-11-01 14:44:29,222 INFO  liveguru.pageobjects.HomePagePO - Click to element with dynamic xpath: //nav[@id='nav']//a[text() = 'TV']
+2018-11-01 14:44:31,726 INFO  liveguru.pageobjects.TVPagePO - Click to element with dynamic xpath: //h2[a[text()='LG LCD']]/following-sibling::div[@class='actions']//a[@class='link-wishlist']
+2018-11-01 14:44:31,760 INFO  liveguru.pageobjects.MyWishlistPagePO - Wait until element with dynamic xpath: //button[@title='Share Wishlist'] visible
+2018-11-01 14:44:35,172 INFO  liveguru.pageobjects.MyWishlistPagePO - Click to element with dynamic xpath: //button[@title='Share Wishlist']
+2018-11-01 14:44:35,291 INFO  liveguru.pageobjects.ShareWishlistPagePO - Sendkey ahun86t9h3@gmail.com to element with dynamic xpath: //textarea[@id='email_address']
+2018-11-01 14:44:35,434 INFO  liveguru.pageobjects.ShareWishlistPagePO - Sendkey Sharing message tvPage Liveguru to element with dynamic xpath: //textarea[@id='message']
+2018-11-01 14:44:35,469 INFO  liveguru.pageobjects.ShareWishlistPagePO - Wait until element with dynamic xpath: //button[@title='Share Wishlist'] visible
+2018-11-01 14:44:37,011 INFO  liveguru.pageobjects.ShareWishlistPagePO - Click to element with dynamic xpath: //button[@title='Share Wishlist']
+2018-11-01 14:44:37,045 INFO  liveguru.pageobjects.MyWishlistPagePO - Wait until element with xpath: //li[@class='success-msg']//span visible
+2018-11-01 14:44:37,061 INFO  liveguru.pageobjects.MyWishlistPagePO - Wait until element with xpath: //li[@class='success-msg']//span visible
+2018-11-01 14:44:37,092 INFO  liveguru.pageobjects.MyWishlistPagePO - Text of element with xpath: //li[@class='success-msg']//span is Your Wishlist has been shared.
+2018-11-01 14:44:37,092 INFO  com.liveguru.TC_07_CreateAccountByDataProvider - Your Wishlist has been shared. is equals Your Wishlist has been shared.
+2018-11-01 14:44:37,092 INFO  com.liveguru.TC_07_CreateAccountByDataProvider - ----------------- PASSED -----------------
+2018-11-01 14:44:37,129 INFO  liveguru.pageobjects.HomePagePO - Wait until element with dynamic xpath: //div[@class='footer']//a[text()='My Account'] visible
+2018-11-01 14:44:38,340 INFO  liveguru.pageobjects.HomePagePO - Click to element with dynamic xpath: //div[@class='footer']//a[text()='My Account']
+2018-11-01 14:44:38,475 INFO  liveguru.pageobjects.HomePagePO - Wait until element with dynamic xpath: //div[@class='footer']//a[text()='My Account'] visible
+2018-11-01 14:44:39,308 INFO  liveguru.pageobjects.HomePagePO - Click to element with dynamic xpath: //div[@class='footer']//a[text()='My Account']
+2018-11-01 14:44:39,342 INFO  liveguru.pageobjects.HomePagePO - Wait until element with dynamic xpath: //div[@class='footer']//a[text()='My Account'] visible
+2018-11-01 14:44:40,168 INFO  liveguru.pageobjects.HomePagePO - Click to element with dynamic xpath: //div[@class='footer']//a[text()='My Account']
+2018-11-01 14:44:41,284 INFO  com.liveguru.TC_07_CreateAccountByDataProvider - ---------- QUIT BROWSER SUCCESS ----------
