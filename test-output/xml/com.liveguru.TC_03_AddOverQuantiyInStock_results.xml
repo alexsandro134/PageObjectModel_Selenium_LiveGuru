@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="9.656">
+           time="5.494">
   <properties />
   
   
-            <testcase name="TC_01_AddOverQuantity" time="9.656" classname="com.liveguru.TC_03_AddOverQuantiyInStock" />
+            <testcase name="TC_01_AddOverQuantity" time="5.494" classname="com.liveguru.TC_03_AddOverQuantiyInStock" />
       
 </testsuite>
