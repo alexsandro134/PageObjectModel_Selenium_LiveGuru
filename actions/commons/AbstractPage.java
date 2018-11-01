@@ -522,7 +522,7 @@ public class AbstractPage {
 	public void overrideGlobalTimeout(WebDriver driver, long timeOut) {
 		driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
 	}
-
+	
 	// Live Guru Project
 	public void clickOnDynamicMenuLink(WebDriver driver, String text) {
 		waitForControlVisible(driver, LiveGuruAbstractPageUI.DYNAMIC_MENU_LINK, text);
