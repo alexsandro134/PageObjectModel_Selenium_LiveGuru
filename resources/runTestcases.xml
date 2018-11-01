@@ -3,7 +3,8 @@
 <suite name="Suite" parallel="false">
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
-		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
 		<listener class-name="commons.ExtentReportNG" />
 	</listeners>
 
@@ -15,11 +16,11 @@
 		<parameter name="browser" value="chrome" />
 		<parameter name="version" value="2.41" />
 		<parameter name="url" value="http://live.guru99.com/" />
-		<!-- <packages> <package name="com.liveguru" /> </packages> -->
-		<classes>
-			<class name="com.liveguru.TC_07_CreateAccountByDataProvider">
-			</class>
-		</classes>
+		<packages>
+			<package name="com.liveguru" />
+		</packages>
+		<!-- <classes> <class name="com.liveguru.TC_07_CreateAccountByDataProvider"> 
+			</class> </classes> -->
 	</test>
 
 	<!-- <test name="Run on CHROME HEADLESS"> <parameter name="browser" value="chrome_headless" 

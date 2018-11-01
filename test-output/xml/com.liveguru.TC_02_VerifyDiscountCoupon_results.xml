@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="5.350">
+           time="4.628">
   <properties />
   
   
-            <testcase name="TC_02_VerifyCoupon" time="5.350" classname="com.liveguru.TC_02_VerifyDiscountCoupon" />
+            <testcase name="TC_02_VerifyCoupon" time="4.628" classname="com.liveguru.TC_02_VerifyDiscountCoupon" />
       
 </testsuite>

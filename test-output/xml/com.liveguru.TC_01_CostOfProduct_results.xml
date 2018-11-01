@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="4.312">
+           time="4.284">
   <properties />
   
   
-            <testcase name="TC_01_CostOfProd" time="4.312" classname="com.liveguru.TC_01_CostOfProduct" />
+            <testcase name="TC_01_CostOfProd" time="4.284" classname="com.liveguru.TC_01_CostOfProduct" />
       
 </testsuite>
