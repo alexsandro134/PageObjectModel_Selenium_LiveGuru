@@ -552,6 +552,14 @@ public class AbstractPage {
 		waitForControlVisible(driver, LiveGuruAbstractPageUI.DYNAMIC_INPUT_INFORMATION, idInput);
 		sendkeyToElement(driver, text, LiveGuruAbstractPageUI.DYNAMIC_INPUT_INFORMATION, idInput);
 	}
+	
+	public void clickOnAccountHeader(WebDriver driver) {
+		clickToElement(driver, LiveGuruAbstractPageUI.ACCOUNT_HEADER);
+	}
+	
+	public void logoutUser(WebDriver driver) {
+		clickToElement(driver, LiveGuruAbstractPageUI.DYNAMIC_HEADER_LINK, "Log Out");
+	}
 
 	public void selectCustomDropdownList(WebDriver driver, String dropdown, String listItems, String valueItem) throws Exception {
 		// Click vào dropdown

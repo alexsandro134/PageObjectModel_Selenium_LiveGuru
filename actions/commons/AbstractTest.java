@@ -124,7 +124,7 @@ public class AbstractTest {
 		return number;
 	}
 
-	private boolean checkPassed(boolean condition) {
+	private boolean checkPassed(boolean condition) throws IOException {
 		boolean pass = true;
 		try {
 			Assert.assertTrue(condition);
@@ -138,11 +138,11 @@ public class AbstractTest {
 		return pass;
 	}
 
-	protected boolean verifyTrue(boolean condition) {
+	protected boolean verifyTrue(boolean condition) throws IOException {
 		return checkPassed(condition);
 	}
 
-	private boolean checkFailed(boolean condition) {
+	private boolean checkFailed(boolean condition) throws IOException {
 		boolean pass = true;
 		try {
 			Assert.assertFalse(condition);
@@ -155,7 +155,7 @@ public class AbstractTest {
 		return pass;
 	}
 
-	protected boolean verifyFalse(boolean condition) {
+	protected boolean verifyFalse(boolean condition) throws IOException {
 		return checkFailed(condition);
 	}
 

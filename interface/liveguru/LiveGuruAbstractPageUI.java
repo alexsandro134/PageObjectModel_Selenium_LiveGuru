@@ -7,4 +7,6 @@ public class LiveGuruAbstractPageUI {
 	public static final String DYNAMIC_BUTTON = "//button[@title='%s']";
 	public static final String SUCCESS_MSG = "//li[@class='success-msg']//span";
 	public static final String DYNAMIC_INPUT_INFORMATION = "//input[@id='%s']";
+	public static final String ACCOUNT_HEADER = "//a[span[text()='Account']]";
+	public static final String DYNAMIC_HEADER_LINK = "//div[@id='header-account']//a[text()='%s']";
 }

@@ -10,4 +10,5 @@ public class MyWishlistPagePO extends AbstractPage {
 	public MyWishlistPagePO(WebDriver _driver) {
 		driver = _driver;
 	}
+
 }

@@ -1,5 +1,7 @@
 package com.liveguru;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -29,7 +31,7 @@ public class TC_02_VerifyDiscountCoupon extends AbstractTest {
 	}
 
 	@Test
-	public void TC_02_VerifyCoupon() {
+	public void TC_02_VerifyCoupon() throws IOException {
 		homePage.clickOnDynamicMenuLink(driver, "Mobile");
 		mobilePage = (MobilePagePO) LiveGuruPageManagerDriver.getInstance(driver, "MobilePage");
 		checkoutPage = mobilePage.addToCart(mobileName);

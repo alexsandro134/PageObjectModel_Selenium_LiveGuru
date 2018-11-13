@@ -3,32 +3,18 @@
 <suite name="Suite" parallel="false">
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
-		<listener
-			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 		<listener class-name="commons.ExtentReportNG" />
+		<listener class-name="commons.Listener_Demo" />
 	</listeners>
-
-	<!-- <test name="Run on IE11"> <parameter name="browser" value="ie" /> <parameter 
-		name="version" value="3.14" /> <parameter name="url" value="http://live.guru99.com/" 
-		/> <packages> <package name="com.liveguru" /> </packages> </test> -->
 
 	<test name="Run on CHROME">
 		<parameter name="browser" value="chrome" />
 		<parameter name="version" value="2.41" />
 		<parameter name="url" value="http://live.guru99.com/" />
-		<packages>
-			<package name="com.liveguru" />
-		</packages>
+		<!-- <packages> <package name="com.liveguru" /> </packages> -->
+		<classes>
+			<class name="com.liveguru.TC_07_CreateAccountByDataProvider"></class>
+		</classes>
 	</test>
-
-	<!-- <test name="Run on CHROME HEADLESS"> <parameter name="browser" value="chrome_headless" 
-		/> <parameter name="version" value="2.41" /> <parameter name="url" value="http://live.guru99.com/" 
-		/> <packages> <package name="com.liveguru" /> </packages> </test> -->
-
-	<!-- <test name="Run on FIREFOX"> <parameter name="browser" value="firefox" 
-		/> <parameter name="version" value="0.21.0" /> <parameter name="url" value="http://live.guru99.com/" 
-		/> <packages> <package name="com.liveguru" /> </packages> </test> <test name="Run 
-		on FIREFOX HEADLESS"> <parameter name="browser" value="firefox_headless" 
-		/> <parameter name="version" value="0.21.0" /> <parameter name="url" value="http://live.guru99.com/" 
-		/> <packages> <package name="com.liveguru" /> </packages> </test> -->
 </suite>
