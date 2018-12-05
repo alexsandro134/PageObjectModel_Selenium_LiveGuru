@@ -522,7 +522,7 @@ public class AbstractPage {
 	public void overrideGlobalTimeout(WebDriver driver, long timeOut) {
 		driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
 	}
-	
+
 	// Live Guru Project
 	public void clickOnDynamicMenuLink(WebDriver driver, String text) {
 		waitForControlVisible(driver, LiveGuruAbstractPageUI.DYNAMIC_MENU_LINK, text);
@@ -552,11 +552,11 @@ public class AbstractPage {
 		waitForControlVisible(driver, LiveGuruAbstractPageUI.DYNAMIC_INPUT_INFORMATION, idInput);
 		sendkeyToElement(driver, text, LiveGuruAbstractPageUI.DYNAMIC_INPUT_INFORMATION, idInput);
 	}
-	
+
 	public void clickOnAccountHeader(WebDriver driver) {
 		clickToElement(driver, LiveGuruAbstractPageUI.ACCOUNT_HEADER);
 	}
-	
+
 	public void logoutUser(WebDriver driver) {
 		clickToElement(driver, LiveGuruAbstractPageUI.DYNAMIC_HEADER_LINK, "Log Out");
 	}
